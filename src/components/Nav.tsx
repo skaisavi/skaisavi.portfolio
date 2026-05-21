@@ -1,12 +1,39 @@
 'use client'
 
 import { useEffect, useState } from 'react'
+import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 import { NAV_LINKS } from '@/data'
+import { useMagnetic } from '@/hooks/useMagnetic'
+
+function MagneticCV({ className, download, children, onClick }: {
+  className: string
+  download?: boolean
+  children: React.ReactNode
+  onClick?: () => void
+}) {
+  const { ref, onMouseMove, onMouseLeave } = useMagnetic<HTMLAnchorElement>()
+  return (
+    <span className="magnetic-wrapper">
+      <a
+        ref={ref}
+        href="/cv.pdf"
+        className={className}
+        download={download}
+        onClick={onClick}
+        onMouseMove={onMouseMove}
+        onMouseLeave={onMouseLeave}
+      >
+        {children}
+      </a>
+    </span>
+  )
+}
 
 export default function Nav() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
-  const [activeHref, setActiveHref] = useState('')
+  const pathname = usePathname()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 40)
@@ -19,65 +46,43 @@ export default function Nav() {
     return () => { document.body.style.overflow = '' }
   }, [menuOpen])
 
-  useEffect(() => {
-    const sections = document.querySelectorAll<HTMLElement>('section[id]')
-    const observer = new IntersectionObserver(
-      entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) setActiveHref(`#${entry.target.id}`)
-        })
-      },
-      { threshold: 0.4 },
-    )
-    sections.forEach(s => observer.observe(s))
-    return () => observer.disconnect()
-  }, [])
-
   const closeMenu = () => setMenuOpen(false)
 
   return (
     <>
-      <nav className={`nav${scrolled ? ' scrolled' : ''}`}>
-        <div className="nav-inner">
-          <a className="nav-logo" href="#hero">S.</a>
+      <nav className={`site-nav${scrolled ? ' light' : ''}`}>
+        <div className="nav-pill">
+          <Link className="nav-logo" href="/">Skaiste.</Link>
           <ul className="nav-links">
             {NAV_LINKS.map(({ href, label }) => (
               <li key={href}>
-                <a
-                  href={href}
-                  style={{
-                    fontWeight: activeHref === href ? '700' : '500',
-                    color: activeHref === href ? 'var(--accent-a)' : '',
-                  }}
-                >
+                <Link href={href} className={pathname === href ? 'active' : ''}>
                   {label}
-                </a>
+                </Link>
               </li>
             ))}
           </ul>
-          <a href="cv.pdf" className="nav-cv magnetic" download aria-label="Download CV">
-            Download CV ↓
-          </a>
-          <button
-            className={`nav-menu-btn${menuOpen ? ' open' : ''}`}
-            onClick={() => setMenuOpen(o => !o)}
-            aria-label="Toggle menu"
-          >
-            <span />
-            <span />
-          </button>
+          <div style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
+            <MagneticCV className="nav-cv" download>Download CV</MagneticCV>
+            <button
+              className={`nav-menu-btn${menuOpen ? ' open' : ''}`}
+              onClick={() => setMenuOpen(o => !o)}
+              aria-label="Toggle menu"
+            >
+              <span />
+              <span />
+            </button>
+          </div>
         </div>
       </nav>
 
       <div className={`mobile-menu${menuOpen ? ' open' : ''}`}>
         {NAV_LINKS.map(({ href, label }) => (
-          <a key={href} href={href} className="mm-link" onClick={closeMenu}>
+          <Link key={href} href={href} className="mm-link" onClick={closeMenu}>
             {label}
-          </a>
+          </Link>
         ))}
-        <a href="cv.pdf" className="mm-cv" download onClick={closeMenu}>
-          Download CV ↓
-        </a>
+        <MagneticCV className="mm-cv" download onClick={closeMenu}>Download CV</MagneticCV>
       </div>
     </>
   )

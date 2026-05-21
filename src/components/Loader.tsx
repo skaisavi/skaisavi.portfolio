@@ -12,7 +12,7 @@ export default function Loader() {
 
   return (
     <div className={`loader${gone ? ' gone' : ''}`}>
-      <div className="loader-text">S.</div>
+      <div className="loader-text">skaiste.</div>
     </div>
   )
 }

@@ -1,123 +1,107 @@
 'use client'
 
 import { useEffect, useState } from 'react'
-import { motion } from 'framer-motion'
 import { TYPEWRITER_PHRASES } from '@/data'
+import ParticleField from '@/components/ParticleField'
 
 function useTypewriter(phrases: string[], started: boolean): string {
   const [text, setText] = useState('')
-
   useEffect(() => {
     if (!started) return
     let pi = 0, ci = 0, deleting = false
     let timer: ReturnType<typeof setTimeout>
-
     const tick = () => {
       const phrase = phrases[pi]
       if (!deleting) {
         ci++
         setText(phrase.slice(0, ci))
-        if (ci === phrase.length) {
-          deleting = true
-          timer = setTimeout(tick, 2000)
-        } else {
-          timer = setTimeout(tick, 55 + Math.random() * 40)
-        }
+        if (ci === phrase.length) { deleting = true; timer = setTimeout(tick, 2000) }
+        else timer = setTimeout(tick, 55 + Math.random() * 40)
       } else {
         ci--
         setText(phrase.slice(0, ci))
-        if (ci === 0) {
-          deleting = false
-          pi = (pi + 1) % phrases.length
-          timer = setTimeout(tick, 400)
-        } else {
-          timer = setTimeout(tick, 30 + Math.random() * 20)
-        }
+        if (ci === 0) { deleting = false; pi = (pi + 1) % phrases.length; timer = setTimeout(tick, 420) }
+        else timer = setTimeout(tick, 28 + Math.random() * 20)
       }
     }
-
     tick()
     return () => clearTimeout(timer)
   }, [phrases, started])
-
   return text
 }
 
-const container = {
-  hidden: {},
-  visible: {
-    transition: {
-      staggerChildren: 0.07,
-      delayChildren: 0.05,
-    },
-  },
-}
-
-const item = {
-  hidden: { opacity: 0, y: 20 },
-  visible: {
-    opacity: 1,
-    y: 0,
-    transition: { type: 'spring' as const, stiffness: 480, damping: 28 },
-  },
-}
+const TITLES = [['Frontend', 'Developer.'], ['Web', 'Designer.']]
 
 export default function Hero() {
   const [started, setStarted] = useState(false)
+  const [clock, setClock] = useState('')
+  const [titleIdx, setTitleIdx] = useState(0)
+  const [fading, setFading] = useState(false)
+  const typed = useTypewriter(TYPEWRITER_PHRASES, started)
 
   useEffect(() => {
-    const timer = setTimeout(() => setStarted(true), 250)
-    return () => clearTimeout(timer)
+    const t = setTimeout(() => setStarted(true), 400)
+    return () => clearTimeout(t)
   }, [])
 
-  const typed = useTypewriter(TYPEWRITER_PHRASES, started)
+  useEffect(() => {
+    const tick = () => {
+      const n = new Date()
+      const h = String(n.getHours()).padStart(2, '0')
+      const m = String(n.getMinutes()).padStart(2, '0')
+      const s = String(n.getSeconds()).padStart(2, '0')
+      setClock(`London, ${h}:${m}:${s}`)
+    }
+    tick()
+    const id = setInterval(tick, 1000)
+    return () => clearInterval(id)
+  }, [])
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setFading(true)
+      setTimeout(() => {
+        setTitleIdx(i => (i + 1) % TITLES.length)
+        setFading(false)
+      }, 520)
+    }, 3500)
+    return () => clearInterval(id)
+  }, [])
 
   return (
     <section className="hero" id="hero">
-      <div className="hero-bg">
-        <div className="blob blob-1" />
-        <div className="blob blob-2" />
-        <div className="blob blob-3" />
+      <ParticleField />
+      <div className="g1" /><div className="g2" /><div className="g3" /><div className="g4" />
+
+      <div className="hero-bar">
+        <span className="hero-bar-center">{clock}</span>
       </div>
 
-      <motion.div className="hero-content" variants={container} initial="hidden" animate="visible">
-        <motion.p className="hero-eyebrow" variants={item}>
-          <span className="deco-star">✦</span> Hello, I&apos;m
-        </motion.p>
-        <motion.h1 className="hero-title" variants={item}>
-          <span className="line">Skaiste</span>
-          <span className="line gradient-text">Savitri.</span>
-        </motion.h1>
-        <motion.p className="hero-role" variants={item}>
-          <span className="typed-wrap">
-            <span className="typed">{typed}</span>
-            <span className="caret">|</span>
-          </span>
-        </motion.p>
-        <motion.p className="hero-desc" variants={item}>
-          Frontend developer crafting seamless digital experiences with a keen eye for detail and a
-          love for purposeful design.
-        </motion.p>
-        <motion.div className="hero-chips" variants={item}>
-          <span className="hero-chip">📍 UK</span>
-          <span className="hero-chip">✓ Open to remote</span>
-          <span className="hero-chip">✓ Full-time &amp; freelance</span>
-        </motion.div>
-        <motion.div className="hero-cta" variants={item}>
-          <a href="#work" className="btn btn-primary magnetic">View my work</a>
-          <a href="cv.pdf" className="btn btn-ghost magnetic" download>Download CV ↓</a>
-        </motion.div>
-      </motion.div>
+      <div className="hero-hw">
+        <h1 className={`hero-h${fading ? ' fading' : ''}`}>
+          <span>{TITLES[titleIdx][0]}</span>
+          <br />
+          <span className="it">{TITLES[titleIdx][1]}</span>
+        </h1>
+      </div>
 
-      <motion.div
-        className="scroll-hint"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 0.9, duration: 0.5 }}
-      >
-        <span>Scroll</span>
+      <div className="hero-chips">
+        <span className="hero-chip">Based in UK</span>
+        <span className="hero-chip">Open to remote</span>
+        <span className="hero-chip">Full-time &amp; freelance</span>
+      </div>
+
+      <div className="hero-bot">
+        <div className="hero-typewriter">
+          <span>{typed}</span>
+          <span className="caret" />
+        </div>
+      </div>
+
+      <div className="scroll-hint" aria-hidden="true">
+        <span>Scroll down</span>
         <div className="scroll-line" />
-      </motion.div>
+      </div>
     </section>
   )
 }

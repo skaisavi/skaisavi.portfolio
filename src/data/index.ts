@@ -1,55 +1,47 @@
-export interface NavLink {
-  href: string
-  label: string
-}
-
 export interface Project {
   id: string
   title: string
   tag: string
   gradient: string
-  problem: string
+  image?: string
+  href?: string
+  comingSoon?: boolean
+  wide?: boolean
   description: string
   tech: string[]
-  href: string
-  comingSoon?: boolean
 }
 
-
-export interface TimelineItem {
+export interface ExperienceItem {
   role: string
   company: string
   period: string
-  badge: 'current' | 'edu'
+  badge: 'cur' | 'edu'
   badgeLabel: string
   description: string
+  bullets: string[]
   tags: string[]
 }
 
-export interface SkillGroup {
-  title: string
-  items: string[]
-  variant?: 'default' | 'accent' | 'large'
-}
-
-export interface NowItem {
+export interface SkillCategory {
   label: string
-  value: string
+  items: string[]
+  accent?: boolean
+  wide?: boolean
 }
 
-export const NAV_LINKS: NavLink[] = [
-  { href: '#about', label: 'About' },
-  { href: '#experience', label: 'Experience' },
-  { href: '#work', label: 'Work' },
-  { href: '#skills', label: 'Skills' },
-  { href: '#contact', label: 'Contact' },
-]
-
-export const TYPEWRITER_PHRASES: string[] = [
+export const TYPEWRITER_PHRASES = [
   'beautiful interfaces.',
   'seamless experiences.',
   'modern web apps.',
   'things people love.',
+]
+
+export const NAV_LINKS = [
+  { href: '/about',      label: 'About' },
+  { href: '/experience', label: 'Experience' },
+  { href: '/work',       label: 'Work' },
+  { href: '/skills',     label: 'Skills' },
+  { href: '/contact',    label: 'Contact' },
 ]
 
 export const PROJECTS: Project[] = [
@@ -57,81 +49,121 @@ export const PROJECTS: Project[] = [
     id: 'autodrive',
     title: 'AutoDrive',
     tag: 'Marketplace',
-    gradient: 'linear-gradient(135deg, #0d1117 0%, #1a1f3c 60%, #0f2167 100%)',
-    problem: 'Car buyers wasted hours across fragmented sites with no price transparency or trust signals.',
-    description:
-      'Built a full UK car marketplace from scratch — real-time search, HPI checks, price history charts, and part-exchange calculator. Designed and shipped solo as a single-page app.',
-    tech: ['HTML5', 'CSS3', 'JavaScript'],
+    gradient: 'linear-gradient(135deg,#0d1117,#1a1f3c,#0f2167)',
+    image: '/projects/autodrive.png',
     href: 'https://autodrive-delta.vercel.app',
+    wide: true,
+    description:
+      'Full UK car marketplace — real-time search, HPI checks, price history, part-exchange calculator. Designed and shipped solo from concept to live product.',
+    tech: ['HTML5', 'CSS3', 'JavaScript'],
   },
   {
     id: 'prime-steak',
     title: 'Prime Steak & Grill',
     tag: 'Restaurant',
-    gradient: 'linear-gradient(135deg, #1a0800 0%, #3d1200 60%, #7c2d00 100%)',
-    problem: 'Restaurants needed a slick online presence that converts visitors into diners without friction.',
-    description:
-      'Designed and built a full restaurant website for Prime Steak & Grill — featuring a visual menu, atmosphere showcase, and smooth user experience. Shipped as a fast React single-page app.',
-    tech: ['React', 'CSS3', 'JavaScript'],
+    gradient: 'linear-gradient(135deg,#1a0800,#3d1200,#7c2d00)',
+    image: '/projects/prime-steak.png',
     href: 'https://prime-react-green.vercel.app',
+    description:
+      'Slick restaurant website — visual menu, atmosphere showcase, smooth experience. Fast React SPA with zero flicker.',
+    tech: ['React', 'CSS3', 'JavaScript'],
   },
   {
     id: 'debeselis',
     title: 'Debeselis',
     tag: 'Banking App',
-    gradient: 'linear-gradient(135deg, #0a1628 0%, #1a3a6b 60%, #7ba7e8 100%)',
-    problem: 'Mobile banking UIs are cluttered and impersonal — users want something clean, modern, and actually pleasant to open.',
-    description:
-      'Built a cloud banking platform — animated login, OTP flow, dashboard with balance cards, and transaction history. Designed and shipped as a React SPA with Framer Motion animations and a sky-blue visual identity.',
-    tech: ['React', 'TypeScript', 'Framer Motion', 'Tailwind'],
+    gradient: 'linear-gradient(135deg,#0a1628,#1a3a6b,#7ba7e8)',
+    image: '/projects/debeselis.png',
     href: 'https://debeselis-app.vercel.app/login',
+    description:
+      'Cloud banking — animated login, OTP flow, balance dashboard with transaction history. Framer Motion throughout for buttery-smooth micro-interactions.',
+    tech: ['React', 'TypeScript', 'Framer Motion', 'Tailwind'],
   },
   {
     id: 'saas-dashboard',
     title: 'SaaS Dashboard',
     tag: 'UI Design',
-    gradient: 'linear-gradient(135deg, #0d1b2a 0%, #1b2e4b 55%, #1e3a6e 100%)',
-    problem: 'Teams needed a dashboard that surfaces key metrics at a glance without cognitive overload.',
-    description:
-      'A clean, minimal SaaS dashboard designed in Figma — analytics overview, sidebar navigation, data cards, and chart components, all built around a calm visual hierarchy.',
-    tech: ['Figma', 'UI Design', 'Data Viz'],
+    gradient: 'linear-gradient(135deg,#0d1b2a,#1b2e4b,#1e3a6e)',
+    image: '/projects/saas-dashboard.png',
     href: 'https://remix-read-74222076.figma.site/',
+    wide: true,
+    description:
+      'Clean, minimal SaaS dashboard in Figma — analytics overview, sidebar nav, data cards, and chart components. Full design system included.',
+    tech: ['Figma', 'UI Design', 'Data Viz'],
   },
   {
     id: 'lumiere',
     title: 'Lumière',
-    tag: 'UI Design',
-    gradient: 'linear-gradient(135deg, #1a0e2e 0%, #3b1f6b 55%, #7c4dbe 100%)',
-    problem: 'Wanted to explore an elegant, light-driven visual language far from typical dark-mode defaults.',
-    description:
-      'A refined UI design project centred on atmosphere and light — warm gradients, considered typography, and an identity that feels more editorial than app-like.',
-    tech: ['Figma', 'UI Design', 'Branding'],
+    tag: 'Branding',
+    gradient: 'linear-gradient(135deg,#1a0e2e,#3b1f6b,#7c4dbe)',
+    image: '/projects/lumiere.png',
     href: 'https://twirl-clever-74917925.figma.site/',
+    description:
+      'Refined UI design centred on atmosphere and light — warm gradients, considered typography, and an editorial brand identity.',
+    tech: ['Figma', 'UI Design', 'Branding'],
   },
   {
-    id: 'coming-soon',
-    title: 'Coming Soon',
-    tag: 'UI Design',
-    gradient: 'linear-gradient(135deg, #0e0c18 0%, #1a1630 55%, #251f42 100%)',
-    problem: '',
-    description: 'Something new is in the works. Check back soon.',
-    tech: [],
-    href: '#',
+    id: 'figma-next',
+    title: 'Figma Project',
+    tag: 'Coming Soon',
+    gradient: 'linear-gradient(135deg,#0f1a12,#1a3020,#2d5a3d)',
     comingSoon: true,
+    description: 'New Figma design dropping soon — stay tuned for something fresh.',
+    tech: ['Figma', 'UI Design'],
+  },
+  {
+    id: 'dev-next',
+    title: 'Dev Project',
+    tag: 'Coming Soon',
+    gradient: 'linear-gradient(135deg,#1a0f1a,#3a1a3a,#6b2d6b)',
+    comingSoon: true,
+    description: 'Building something new in React — details dropping very soon.',
+    tech: ['React', 'TypeScript'],
+  },
+  {
+    id: 'motion-next',
+    title: 'Motion Project',
+    tag: 'Coming Soon',
+    gradient: 'linear-gradient(135deg,#0d1117,#1c1a2e,#2a1f4e)',
+    comingSoon: true,
+    description: 'An animation-heavy UI experiment — Framer Motion meets editorial layout.',
+    tech: ['Framer Motion', 'React'],
+  },
+  {
+    id: 'brand-next',
+    title: 'Brand Identity',
+    tag: 'Coming Soon',
+    gradient: 'linear-gradient(135deg,#1a1008,#2e1f0a,#4a3010)',
+    comingSoon: true,
+    description: 'Full brand identity system — logo, type, colour, and component library.',
+    tech: ['Figma', 'Design Systems'],
+  },
+  {
+    id: 'fullstack-next',
+    title: 'Full-Stack App',
+    tag: 'Coming Soon',
+    gradient: 'linear-gradient(135deg,#051018,#0a2030,#0f3550)',
+    comingSoon: true,
+    description: 'A full-stack web application with auth, database, and real-time features.',
+    tech: ['Next.js', 'TypeScript', 'PostgreSQL'],
   },
 ]
 
-
-export const EXPERIENCE: TimelineItem[] = [
+export const EXPERIENCE: ExperienceItem[] = [
   {
     role: 'Frontend Developer',
     company: 'Codewave Limited · Full-time',
     period: '2024 — Present',
-    badge: 'current',
+    badge: 'cur',
     badgeLabel: 'Current',
     description:
-      'Building and maintaining client-facing websites across a range of industries. Led UI redesigns focused on smoother interactions and visual polish — turning existing sites into modern, responsive experiences that clients were genuinely proud of.',
-    tags: ['React', 'JavaScript', 'HTML5', 'CSS3'],
+      'Building and maintaining client-facing websites across a range of industries — from hospitality to professional services. Responsible for the full frontend lifecycle: scoping, design, build, and delivery.',
+    bullets: [
+      'Led UI redesigns focused on smoother interactions and visual polish, turning existing sites into modern, responsive experiences clients were genuinely proud of.',
+      'Collaborated directly with clients to translate vague briefs into clear, beautiful interfaces.',
+      'Improved performance and accessibility across multiple live products.',
+    ],
+    tags: ['React', 'JavaScript', 'HTML5', 'CSS3', 'Figma'],
   },
   {
     role: 'BTEC Level 3 Extended Diploma in IT',
@@ -140,25 +172,56 @@ export const EXPERIENCE: TimelineItem[] = [
     badge: 'edu',
     badgeLabel: 'Education',
     description:
-      'Graduated with Distinction, Distinction, Merit. Covered web development, software design, networking, and database fundamentals — with a strong focus on building and deploying real-world projects throughout.',
-    tags: ['Web Development', 'Software Design', 'Databases', 'Networking'],
+      'Graduated with Distinction, Distinction, Merit — the highest achievable grade combination. The course combined software design, web development, networking, and databases, with a strong emphasis on real-world project-based learning.',
+    bullets: [
+      'Shipped multiple end-to-end web projects as coursework, including a full-stack application.',
+      'Developed a strong foundation in software design principles and database fundamentals.',
+      'Received distinctions in every major project submission.',
+    ],
+    tags: ['Web Dev', 'Software Design', 'Databases', 'Networking'],
   },
 ]
 
-export const SKILL_GROUPS: SkillGroup[] = [
+export const SKILL_CATEGORIES: SkillCategory[] = [
   {
-    title: 'Frontend',
-    items: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Vue', 'TypeScript'],
-    variant: 'large',
+    label: 'Frontend Code',
+    items: ['HTML5', 'CSS3', 'JavaScript', 'React', 'Vue', 'TypeScript', 'Next.js'],
   },
-  { title: 'Styling', items: ['Tailwind', 'SCSS', 'CSS Animations', 'Responsive Design'] },
-  { title: 'Backend', items: ['Node.js', 'Express', 'REST APIs', 'PostgreSQL'] },
-  { title: 'Tools', items: ['Git & GitHub', 'Figma', 'VS Code', 'Vite'], variant: 'accent' },
-  { title: 'Principles', items: ['Accessibility', 'Performance', 'SEO', 'UI/UX Design'] },
+  {
+    label: 'Styling & Animation',
+    items: ['Tailwind CSS', 'SCSS', 'Framer Motion', 'CSS Animations', 'Responsive Design'],
+  },
+  {
+    label: 'Design & Tools',
+    items: ['Figma', 'UI Design', 'Prototyping', 'Design Systems', 'Git', 'VS Code', 'Vite'],
+  },
+  {
+    label: 'Backend & Data',
+    items: ['Node.js', 'Express', 'REST APIs', 'PostgreSQL'],
+  },
+  {
+    label: 'Principles',
+    items: ['Accessibility', 'Web Performance', 'SEO', 'Mobile-first', 'UI/UX'],
+  },
+  {
+    label: 'Right now ✶',
+    wide: true,
+    accent: true,
+    items: [
+      'Next.js & React Server Components',
+      'Advanced TypeScript',
+      'Three.js / WebGL',
+      'Design systems at scale',
+    ],
+  },
 ]
 
-export const NOW_ITEMS: NowItem[] = [
-  { label: 'Learning', value: 'Next.js & React Server Components' },
-  { label: 'Building', value: 'This portfolio' },
-  { label: 'Reading', value: "You Don't Know JS" },
+export const HOME_SKILL_PILLS = [
+  'React', 'TypeScript', 'Next.js', 'Tailwind', 'Figma',
+  'Node.js', 'Framer Motion', 'CSS Animations',
+]
+
+export const MARQUEE_ITEMS = [
+  'React', 'TypeScript', 'Next.js', 'Tailwind',
+  'Figma', 'Node.js', 'Creative Developer', 'UI Design',
 ]
