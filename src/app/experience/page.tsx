@@ -1,8 +1,5 @@
 import Link from 'next/link'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
-import CustomCursor from '@/components/CustomCursor'
-import ScrollProgress from '@/components/ScrollProgress'
+import SiteShell from '@/components/SiteShell'
 import { EXPERIENCE } from '@/data'
 
 export const metadata = {
@@ -12,10 +9,7 @@ export const metadata = {
 
 export default function ExperiencePage() {
   return (
-    <>
-      <ScrollProgress />
-      <CustomCursor />
-      <Nav />
+    <SiteShell>
       <main className="experience-page">
         <div className="page-header">
           <div className="container">
@@ -60,7 +54,6 @@ export default function ExperiencePage() {
           </div>
         </section>
       </main>
-      <Footer />
-    </>
+    </SiteShell>
   )
 }

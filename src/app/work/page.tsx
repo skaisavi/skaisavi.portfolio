@@ -1,9 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
-import CustomCursor from '@/components/CustomCursor'
-import ScrollProgress from '@/components/ScrollProgress'
+import SiteShell from '@/components/SiteShell'
 import { PROJECTS } from '@/data'
 
 export const metadata = {
@@ -13,10 +10,7 @@ export const metadata = {
 
 export default function WorkPage() {
   return (
-    <>
-      <ScrollProgress />
-      <CustomCursor />
-      <Nav />
+    <SiteShell>
       <main className="work-page">
         <div className="page-header">
           <div className="container">
@@ -83,7 +77,6 @@ export default function WorkPage() {
           </div>
         </section>
       </main>
-      <Footer />
-    </>
+    </SiteShell>
   )
 }

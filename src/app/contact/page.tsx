@@ -1,7 +1,4 @@
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
-import CustomCursor from '@/components/CustomCursor'
-import ScrollProgress from '@/components/ScrollProgress'
+import SiteShell from '@/components/SiteShell'
 import ContactForm from '@/components/ContactForm'
 
 export const metadata = {
@@ -11,10 +8,7 @@ export const metadata = {
 
 export default function ContactPage() {
   return (
-    <>
-      <ScrollProgress />
-      <CustomCursor />
-      <Nav />
+    <SiteShell>
       <main className="contact-page">
         <div className="contact-watermark" aria-hidden="true">HELLO</div>
 
@@ -66,7 +60,6 @@ export default function ContactPage() {
           </div>
         </div>
       </main>
-      <Footer />
-    </>
+    </SiteShell>
   )
 }

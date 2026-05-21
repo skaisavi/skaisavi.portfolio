@@ -1,8 +1,5 @@
 import Link from 'next/link'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
-import CustomCursor from '@/components/CustomCursor'
-import ScrollProgress from '@/components/ScrollProgress'
+import SiteShell from '@/components/SiteShell'
 import SkillCloud from '@/components/SkillCloud'
 
 export const metadata = {
@@ -12,10 +9,7 @@ export const metadata = {
 
 export default function SkillsPage() {
   return (
-    <>
-      <ScrollProgress />
-      <CustomCursor />
-      <Nav />
+    <SiteShell>
       <main className="skills-page">
         <div className="page-header">
           <div className="container">
@@ -43,7 +37,6 @@ export default function SkillsPage() {
           </div>
         </section>
       </main>
-      <Footer />
-    </>
+    </SiteShell>
   )
 }

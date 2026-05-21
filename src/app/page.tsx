@@ -1,21 +1,13 @@
 import Link from 'next/link'
-import Loader from '@/components/Loader'
-import CustomCursor from '@/components/CustomCursor'
-import ScrollProgress from '@/components/ScrollProgress'
-import Nav from '@/components/Nav'
 import Hero from '@/components/Hero'
 import Marquee from '@/components/Marquee'
 import ProjectBelt from '@/components/ProjectBelt'
-import Footer from '@/components/Footer'
+import SiteShell from '@/components/SiteShell'
 import { HOME_SKILL_PILLS } from '@/data'
 
 export default function Home() {
   return (
-    <>
-      <ScrollProgress />
-      <Loader />
-      <CustomCursor />
-      <Nav />
+    <SiteShell loader>
       <main>
         <Hero />
         <Marquee />
@@ -87,7 +79,6 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
-    </>
+    </SiteShell>
   )
 }

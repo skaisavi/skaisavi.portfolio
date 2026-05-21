@@ -2,7 +2,10 @@ import type { Metadata } from 'next'
 import './fonts.css'
 import './globals.css'
 
+const siteUrl = new URL('https://skaisavi.com')
+
 export const metadata: Metadata = {
+  metadataBase: siteUrl,
   title: 'Skaiste Savitri — Frontend Developer & Web Designer',
   description:
     'Frontend developer & web designer based in the UK crafting beautiful, functional digital experiences. Open to full-time, freelance & contract roles.',

@@ -1,8 +1,5 @@
 import Link from 'next/link'
-import Nav from '@/components/Nav'
-import Footer from '@/components/Footer'
-import CustomCursor from '@/components/CustomCursor'
-import ScrollProgress from '@/components/ScrollProgress'
+import SiteShell from '@/components/SiteShell'
 
 export const metadata = {
   title: 'About — Skaiste Savitri',
@@ -11,10 +8,7 @@ export const metadata = {
 
 export default function AboutPage() {
   return (
-    <>
-      <ScrollProgress />
-      <CustomCursor />
-      <Nav />
+    <SiteShell>
       <main className="about-page">
         <div className="page-header">
           <div className="container">
@@ -93,7 +87,6 @@ export default function AboutPage() {
           </div>
         </section>
       </main>
-      <Footer />
-    </>
+    </SiteShell>
   )
 }
