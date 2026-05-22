@@ -34,7 +34,8 @@
 
 .hero-hw {
   position: relative; z-index: 6; flex: 1;
-  display: flex; align-items: center; justify-content: center; padding: 0 48px;
+  display: flex; align-items: flex-end; justify-content: center; padding: 0 48px;
+  min-height: 0;
 }
 .hero-h {
   font-family: var(--font-display);
@@ -52,7 +53,7 @@
 .hero-chips {
   position: relative; z-index: 6;
   display: flex; align-items: center; justify-content: center;
-  gap: 12px; padding: 0 48px; margin-top: 14px; flex-wrap: wrap;
+  gap: 12px; padding: 0 48px; margin-top: 28px; flex-wrap: wrap;
 }
 .hero-chip {
   font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
@@ -62,7 +63,7 @@
 
 .hero-bot {
   position: relative; z-index: 6;
-  padding: 0 48px; margin-top: 18px;
+  padding: 0 48px; margin-top: 42px;
   display: flex; align-items: center; justify-content: center;
 }
 .hero-typewriter {
@@ -79,7 +80,7 @@
 
 .scroll-hint {
   display: flex; flex-direction: column; align-items: center; gap: 8px;
-  z-index: 7; padding-bottom: 36px; align-self: center; margin-top: auto; pointer-events: none;
+  z-index: 7; padding-bottom: 36px; align-self: center; margin-top: 22px; pointer-events: none;
 }
 .scroll-hint span {
   font-size: .6rem; font-weight: 600; letter-spacing: .18em; text-transform: uppercase;
