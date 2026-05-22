@@ -67,6 +67,10 @@
     min-height: 2.4em;
     line-height: 1.45;
   }
+  .hero-typewriter span:first-child {
+    min-width: 0;
+    text-align: center;
+  }
   .home-work-grid { grid-template-columns: 1fr; }
   .about-cards-row { grid-template-columns: 1fr; }
   .exp-hdr { flex-direction: column; }
