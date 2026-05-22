@@ -62,7 +62,7 @@
 
 .hero-bot {
   position: relative; z-index: 6;
-  padding: 0 48px; margin-top: auto;
+  padding: 0 48px; margin-top: 18px;
   display: flex; align-items: center; justify-content: center;
 }
 .hero-typewriter {

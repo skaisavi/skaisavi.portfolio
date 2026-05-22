@@ -85,17 +85,17 @@ export default function Hero() {
         </h1>
       </div>
 
-      <div className="hero-chips">
-        <span className="hero-chip">Based in UK</span>
-        <span className="hero-chip">Open to remote</span>
-        <span className="hero-chip">Full-time &amp; freelance</span>
-      </div>
-
       <div className="hero-bot">
         <div className="hero-typewriter">
           <span>{typed}</span>
           <span className="caret" />
         </div>
+      </div>
+
+      <div className="hero-chips">
+        <span className="hero-chip">Based in UK</span>
+        <span className="hero-chip">Open to remote</span>
+        <span className="hero-chip">Full-time &amp; freelance</span>
       </div>
 
       <div className="scroll-hint" aria-hidden="true">
