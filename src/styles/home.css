@@ -255,8 +255,11 @@
 }
 .belt-card-media {
   height: 180px; position: relative; overflow: hidden;
+  display: block;
+  color: inherit;
 }
 .belt-card-img { object-fit: cover; object-position: top; }
+.belt-card-motion-atelier .belt-card-img { object-position: center top; }
 .belt-card-tag { position: relative; z-index: 1; }
 .belt-card-media::after {
   content: ''; position: absolute; inset: 0;

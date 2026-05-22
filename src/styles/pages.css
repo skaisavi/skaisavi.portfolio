@@ -166,10 +166,17 @@
   height: 264px; display: flex; flex-direction: column;
   justify-content: space-between; padding: 22px 26px;
   position: relative; overflow: hidden;
+  color: inherit;
 }
 .pc-img { object-fit: cover; object-position: top; }
 .pc-tag { position: relative; z-index: 1; }
 .project-card.wide .pc-media { height: 340px; }
+.project-card-motion-atelier .pc-img {
+  object-position: center top;
+}
+.project-card-motion-atelier.wide .pc-media {
+  height: 420px;
+}
 .pc-media::after {
   content: ''; position: absolute; inset: 0;
   background: linear-gradient(to bottom, transparent 25%, rgba(0,0,0,.56));

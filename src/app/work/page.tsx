@@ -26,13 +26,18 @@ export default function WorkPage() {
           <div className="container">
             <div className="projects-grid">
               {PROJECTS.map(project => (
-                <div
+                <article
                   key={project.id}
-                  className={`project-card${project.wide ? ' wide' : ''}`}
+                  className={`project-card project-card-${project.id}${project.wide ? ' wide' : ''}`}
                 >
-                  <div
+                  <a
+                    href={project.comingSoon ? undefined : project.href}
                     className="pc-media"
                     style={project.image ? undefined : { background: project.gradient }}
+                    target={project.comingSoon ? undefined : '_blank'}
+                    rel={project.comingSoon ? undefined : 'noopener noreferrer'}
+                    aria-label={project.comingSoon ? undefined : `View ${project.title}`}
+                    tabIndex={project.comingSoon ? -1 : undefined}
                   >
                     {project.image && (
                       <Image
@@ -44,7 +49,7 @@ export default function WorkPage() {
                       />
                     )}
                     <span className="pc-tag">{project.tag}</span>
-                  </div>
+                  </a>
                   <div className="pc-body">
                     <div className="pc-header">
                       <h2 className="pc-title">{project.title}</h2>
@@ -67,7 +72,7 @@ export default function WorkPage() {
                       {project.tech.map(t => <span key={t}>{t}</span>)}
                     </div>
                   </div>
-                </div>
+                </article>
               ))}
             </div>
 

@@ -15,11 +15,16 @@ export default function ProjectBelt() {
           {BELT.map((project, i) => (
             <div
               key={`${project.id}-${i}`}
-              className="belt-card"
+              className={`belt-card belt-card-${project.id}`}
             >
-              <div
+              <a
+                href={project.comingSoon ? undefined : project.href}
                 className="belt-card-media"
                 style={project.image ? undefined : { background: project.gradient }}
+                target={project.comingSoon ? undefined : '_blank'}
+                rel={project.comingSoon ? undefined : 'noopener noreferrer'}
+                aria-label={project.comingSoon ? undefined : `View ${project.title}`}
+                tabIndex={project.comingSoon ? -1 : undefined}
               >
                 {project.image && (
                   <Image
@@ -31,7 +36,7 @@ export default function ProjectBelt() {
                   />
                 )}
                 <span className="belt-card-tag">{project.tag}</span>
-              </div>
+              </a>
               <div className="belt-card-body">
                 <div className="belt-card-hd">
                   <h3 className="belt-card-title">{project.title}</h3>
