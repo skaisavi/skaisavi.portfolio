@@ -34,8 +34,7 @@
 
 .hero-hw {
   position: relative; z-index: 6; flex: 1;
-  display: flex; align-items: flex-end; justify-content: center; padding: 0 48px;
-  min-height: 0;
+  display: flex; align-items: center; justify-content: center; padding: 0 48px;
 }
 .hero-h {
   font-family: var(--font-display);
@@ -53,7 +52,7 @@
 .hero-chips {
   position: relative; z-index: 6;
   display: flex; align-items: center; justify-content: center;
-  gap: 12px; padding: 0 48px; margin-top: 28px; flex-wrap: wrap;
+  gap: 12px; padding: 0 48px; margin-top: 24px; flex-wrap: wrap;
 }
 .hero-chip {
   font-size: .72rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase;
@@ -63,7 +62,7 @@
 
 .hero-bot {
   position: relative; z-index: 6;
-  padding: 0 48px; margin-top: 42px;
+  padding: 0 48px; margin-top: 26px;
   display: flex; align-items: center; justify-content: center;
 }
 .hero-typewriter {
