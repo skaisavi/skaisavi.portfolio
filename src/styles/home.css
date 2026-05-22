@@ -64,6 +64,7 @@
   position: relative; z-index: 6;
   padding: 0 48px; margin-top: 16px;
   display: flex; align-items: center; justify-content: center;
+  transform: translateY(-24px);
 }
 .hero-typewriter {
   font-family: var(--font-mono); font-size: .82rem; color: rgba(255,255,255,.32);
