@@ -79,6 +79,16 @@ export const PROJECTS: Project[] = [
     tech: ['Figma', 'UI Design', 'Case Study'],
   },
   {
+    id: 'motion-atelier',
+    title: 'Motion Atelier',
+    tag: 'Motion UI',
+    gradient: 'linear-gradient(135deg,#17110c,#4b3728,#d6b48c)',
+    href: 'https://github.com/skaisavi/motion-atelier',
+    description:
+      'Luxury editorial frontend experiment exploring cinematic motion, refined typography, abstract interface studies, and scroll-led storytelling.',
+    tech: ['React', 'TypeScript', 'Framer Motion', 'Tailwind'],
+  },
+  {
     id: 'prime-steak',
     title: 'Prime Steak & Grill',
     tag: 'Restaurant',
