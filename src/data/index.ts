@@ -58,6 +58,27 @@ export const PROJECTS: Project[] = [
     tech: ['HTML5', 'CSS3', 'JavaScript'],
   },
   {
+    id: 'nuffield-health-gym',
+    title: 'Nuffield Health Gym',
+    tag: 'Wellness',
+    gradient: 'linear-gradient(135deg,#062a22,#0f6b4f,#7ddf9b)',
+    href: 'https://nuffield-health-gym.vercel.app/',
+    description:
+      'Responsive gym and health landing page with polished service sections, strong brand-led visuals, and a clean conversion-focused flow for memberships and wellbeing.',
+    tech: ['React', 'Responsive UI', 'CSS3'],
+  },
+  {
+    id: 'musevault',
+    title: 'MuseVault',
+    tag: 'Case Study',
+    gradient: 'linear-gradient(135deg,#130f24,#44215f,#d45aa8)',
+    href: 'https://www.figma.com/design/v7MqA8mG9hY66GsrZ9ACLr/MuseVault-%E2%80%94-Portfolio-Case-Study?node-id=0-1&t=ZAF53OzsOeHGHtac-1',
+    wide: true,
+    description:
+      'Portfolio case study for a creative digital vault concept — product thinking, visual direction, interface design, and presentation crafted in Figma.',
+    tech: ['Figma', 'UI Design', 'Case Study'],
+  },
+  {
     id: 'prime-steak',
     title: 'Prime Steak & Grill',
     tag: 'Restaurant',
