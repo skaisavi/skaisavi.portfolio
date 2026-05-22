@@ -148,6 +148,7 @@
 .work-body .container { position: relative; z-index: 1; }
 .projects-grid {
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; margin-top: 64px;
+  grid-auto-flow: dense;
 }
 .project-card {
   border-radius: var(--r-xl); overflow: hidden;
