@@ -62,6 +62,7 @@ export const PROJECTS: Project[] = [
     title: 'Nuffield Health Gym',
     tag: 'Wellness',
     gradient: 'linear-gradient(135deg,#062a22,#0f6b4f,#7ddf9b)',
+    image: '/projects/nuffield-health-gym.svg',
     href: 'https://nuffield-health-gym.vercel.app/',
     description:
       'Responsive gym and health landing page with polished service sections, strong brand-led visuals, and a clean conversion-focused flow for memberships and wellbeing.',

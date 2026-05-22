@@ -1,0 +1,94 @@
+<svg width="1904" height="949" viewBox="0 0 1904 949" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1904" height="949" fill="#F4F4F6"/>
+  <rect width="1904" height="62" fill="#00542B"/>
+  <path d="M59 38C54 33 49 29 49 24C49 19 53 16 58 16C61 16 64 18 66 21C68 18 71 16 75 16C80 16 84 19 84 24C84 29 79 34 67 42C66 43 65 43 64 42C62 41 61 39 59 38Z" fill="#00B864"/>
+  <text x="80" y="36" fill="white" font-family="Inter, Arial, sans-serif" font-size="18" font-weight="700">Nuffield Health</text>
+  <text x="912" y="35" fill="white" font-family="Inter, Arial, sans-serif" font-size="15" font-weight="500">Membership</text>
+  <rect x="912" y="47" width="82" height="2" rx="1" fill="#00C875"/>
+  <text x="1688" y="35" fill="white" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="500">Sign in</text>
+  <rect x="1749" y="12" width="107" height="39" rx="19.5" fill="#008A49"/>
+  <text x="1784" y="35" fill="white" font-family="Inter, Arial, sans-serif" font-size="14" font-weight="700">Join now</text>
+
+  <g filter="url(#soft)">
+    <rect x="313" y="102" width="410" height="641" rx="20" fill="white"/>
+  </g>
+  <text x="379" y="194" fill="#0B0D12" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="500">Basic</text>
+  <text x="379" y="228" fill="#4D5565" font-family="Inter, Arial, sans-serif" font-size="16">Perfect for getting started with your</text>
+  <text x="379" y="253" fill="#4D5565" font-family="Inter, Arial, sans-serif" font-size="16">fitness journey</text>
+  <text x="379" y="333" fill="#1C1D21" font-family="Inter, Arial, sans-serif" font-size="57" font-weight="800">&#163;29</text>
+  <text x="474" y="333" fill="#4D5565" font-family="Inter, Arial, sans-serif" font-size="17">/month</text>
+
+  <g filter="url(#greenGlow)">
+    <rect x="748" y="102" width="410" height="754" rx="20" fill="white" stroke="#00B864" stroke-width="2"/>
+  </g>
+  <rect x="884" y="83" width="137" height="29" rx="14.5" fill="#008A49"/>
+  <text x="909" y="102" fill="white" font-family="Inter, Arial, sans-serif" font-size="13" font-weight="800">Most Popular</text>
+  <text x="814" y="194" fill="#0B0D12" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="500">Premium</text>
+  <text x="814" y="228" fill="#4D5565" font-family="Inter, Arial, sans-serif" font-size="16">Our most popular plan for dedicated</text>
+  <text x="814" y="253" fill="#4D5565" font-family="Inter, Arial, sans-serif" font-size="16">fitness enthusiasts</text>
+  <text x="814" y="333" fill="#1C1D21" font-family="Inter, Arial, sans-serif" font-size="57" font-weight="800">&#163;59</text>
+  <text x="909" y="333" fill="#4D5565" font-family="Inter, Arial, sans-serif" font-size="17">/month</text>
+
+  <g filter="url(#soft)">
+    <rect x="1182" y="102" width="410" height="793" rx="20" fill="white"/>
+  </g>
+  <text x="1249" y="194" fill="#0B0D12" font-family="Inter, Arial, sans-serif" font-size="29" font-weight="500">Elite</text>
+  <text x="1249" y="228" fill="#4D5565" font-family="Inter, Arial, sans-serif" font-size="16">Complete health solution with premium</text>
+  <text x="1249" y="253" fill="#4D5565" font-family="Inter, Arial, sans-serif" font-size="16">benefits</text>
+  <text x="1249" y="333" fill="#1C1D21" font-family="Inter, Arial, sans-serif" font-size="57" font-weight="800">&#163;99</text>
+  <text x="1345" y="333" fill="#4D5565" font-family="Inter, Arial, sans-serif" font-size="17">/month</text>
+
+  <g font-family="Inter, Arial, sans-serif" font-size="15" fill="#05070B">
+    <g transform="translate(379 388)">
+      <use href="#check"/><text x="33" y="5">Access to gym facilities</text>
+      <use href="#check" y="39"/><text x="33" y="44">Up to 5 classes per month</text>
+      <use href="#check" y="78"/><text x="33" y="83">Basic progress tracking</text>
+      <use href="#check" y="117"/><text x="33" y="122">Mobile app access</text>
+      <use href="#check" y="156"/><text x="33" y="161">Locker room access</text>
+      <use href="#check" y="195"/><text x="33" y="200">Free gym induction</text>
+    </g>
+    <g transform="translate(814 388)">
+      <use href="#check"/><text x="33" y="5">Unlimited gym access</text>
+      <use href="#check" y="39"/><text x="33" y="44">Unlimited class bookings</text>
+      <use href="#check" y="78"/><text x="33" y="83">Advanced progress tracking</text>
+      <use href="#check" y="117"/><text x="33" y="122">Personal training sessions (2/month)</text>
+      <use href="#check" y="156"/><text x="33" y="161">Nutrition guidance</text>
+      <use href="#check" y="195"/><text x="33" y="200">Priority booking</text>
+      <use href="#check" y="234"/><text x="33" y="239">Guest passes (2/month)</text>
+      <use href="#check" y="273"/><text x="33" y="278">Access to all pools</text>
+      <use href="#check" y="312"/><text x="33" y="317">Free fitness assessments</text>
+    </g>
+    <g transform="translate(1249 388)">
+      <use href="#check"/><text x="33" y="5">All Premium features</text>
+      <use href="#check" y="39"/><text x="33" y="44">Personal training sessions (4/month)</text>
+      <use href="#check" y="78"/><text x="33" y="83">Customised workout plans</text>
+      <use href="#check" y="117"/><text x="33" y="122">Nutrition meal planning</text>
+      <use href="#check" y="156"/><text x="33" y="161">Recovery and massage (2/month)</text>
+      <use href="#check" y="195"/><text x="33" y="200">VIP locker room access</text>
+      <use href="#check" y="234"/><text x="33" y="239">Unlimited guest passes</text>
+      <use href="#check" y="273"/><text x="33" y="278">Exclusive member events</text>
+      <use href="#check" y="312"/><text x="33" y="317">Physiotherapy consultation</text>
+      <use href="#check" y="351"/><text x="33" y="356">Mental wellbeing support</text>
+    </g>
+  </g>
+
+  <rect x="379" y="622" width="278" height="55" rx="27.5" fill="white" stroke="#008A49" stroke-width="2"/>
+  <text x="473" y="654" fill="#00753D" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">Get started</text>
+  <rect x="813" y="735" width="280" height="56" rx="28" fill="#008A49"/>
+  <text x="908" y="768" fill="white" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">Get started</text>
+  <rect x="1249" y="774" width="277" height="54" rx="27" fill="white" stroke="#008A49" stroke-width="2"/>
+  <text x="1342" y="805" fill="#00753D" font-family="Inter, Arial, sans-serif" font-size="16" font-weight="800">Get started</text>
+
+  <defs>
+    <g id="check">
+      <circle cx="11" cy="0" r="11" fill="#008A49"/>
+      <path d="M6.5 -0.5L9.5 2.5L16 -5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </g>
+    <filter id="soft" x="283" y="72" width="470" height="853" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="25" flood-color="#DDE3E5" flood-opacity="0.55"/>
+    </filter>
+    <filter id="greenGlow" x="708" y="62" width="490" height="896" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="24" stdDeviation="26" flood-color="#00A85A" flood-opacity="0.20"/>
+    </filter>
+  </defs>
+</svg>
