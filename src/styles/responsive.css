@@ -19,6 +19,41 @@
   .project-card.wide .pc-media { height: 280px; }
 }
 @media (max-width: 640px) {
+  .particle-canvas,
+  .g3,
+  .g4,
+  .scroll-progress {
+    display: none;
+  }
+
+  .g1,
+  .g2 {
+    animation: none;
+    filter: none;
+    opacity: .55;
+  }
+
+  .nav-pill,
+  .mobile-menu,
+  .hero-chip,
+  .belt-card,
+  .belt-card-tag,
+  .feat-card,
+  .feat-card-tag {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+
+  .mq-i,
+  .belt-inner {
+    animation-duration: 80s;
+    will-change: auto;
+  }
+
+  .belt-card {
+    width: 280px;
+  }
+
   .hero-h { font-size: clamp(2.5rem, 12vw, 4rem); }
   .home-work-grid { grid-template-columns: 1fr; }
   .about-cards-row { grid-template-columns: 1fr; }

@@ -34,24 +34,32 @@ export default function ParticleField() {
     particles: Particle[]
     mouse: { x: number; y: number }
     raf: number
-  }>({ particles: [], mouse: { x: -9999, y: -9999 }, raf: 0 })
+    visible: boolean
+  }>({ particles: [], mouse: { x: -9999, y: -9999 }, raf: 0, visible: false })
 
   useEffect(() => {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
+    const touchDevice = window.matchMedia('(pointer: coarse)').matches
+    if (reduceMotion || touchDevice) return
+
     const canvas = canvasRef.current
     if (!canvas) return
     const ctx = canvas.getContext('2d')
     if (!ctx) return
 
     const s     = stateRef.current
-    const COUNT = window.innerWidth < 768 ? 40 : 80
+    const COUNT = window.innerWidth < 768 ? 20 : 70
+    const dpr = Math.min(window.devicePixelRatio || 1, 1.5)
+    s.visible = true
 
     // Initialise canvas size + particle array
     const init = () => {
       const w = canvas.offsetWidth
       const h = canvas.offsetHeight
       if (!w || !h) return
-      canvas.width  = w
-      canvas.height = h
+      canvas.width  = Math.floor(w * dpr)
+      canvas.height = Math.floor(h * dpr)
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0)
 
       s.particles = Array.from({ length: COUNT }, () => {
         const ox = rand(0, w)
@@ -89,16 +97,26 @@ export default function ParticleField() {
     hero?.addEventListener('mousemove', onMove)
     hero?.addEventListener('mouseleave', onLeave)
 
+    const io = new IntersectionObserver(([entry]) => {
+      s.visible = entry.isIntersecting
+    })
+    io.observe(canvas)
+
     const t0 = performance.now()
 
     const loop = (now: number) => {
       const t  = (now - t0) / 1000   // seconds elapsed
-      const w  = canvas.width
-      const h  = canvas.height
+      const w  = canvas.offsetWidth
+      const h  = canvas.offsetHeight
       const mx = s.mouse.x
       const my = s.mouse.y
 
-      ctx.clearRect(0, 0, w, h)
+      if (!s.visible || document.hidden) {
+        s.raf = requestAnimationFrame(loop)
+        return
+      }
+
+      ctx.clearRect(0, 0, canvas.width, canvas.height)
 
       for (const p of s.particles) {
         // ── Drift target (sine wave idle float) ──────────────────────────
@@ -144,6 +162,7 @@ export default function ParticleField() {
 
     return () => {
       cancelAnimationFrame(s.raf)
+      io.disconnect()
       ro.disconnect()
       hero?.removeEventListener('mousemove', onMove)
       hero?.removeEventListener('mouseleave', onLeave)

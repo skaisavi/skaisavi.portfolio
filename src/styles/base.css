@@ -78,10 +78,13 @@ body.cursor-active .cursor-ring { width: 56px; height: 56px; border-color: rgba(
 
 /* â”€â”€ SCROLL PROGRESS â”€â”€ */
 .scroll-progress {
-  position: fixed; top: 0; left: 0; height: 3px; width: 0; z-index: 9000;
+  position: fixed; top: 0; left: 0; height: 3px; width: 100%; z-index: 9000;
   border-radius: 99px;
   background: linear-gradient(90deg, var(--p), var(--p2), var(--p3));
   box-shadow: 0 0 14px rgba(168,85,247,.5);
+  transform: scaleX(0);
+  transform-origin: left center;
+  will-change: transform;
 }
 
 /* â”€â”€ LOADER â”€â”€ */

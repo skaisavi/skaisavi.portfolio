@@ -36,7 +36,16 @@ export default function Nav() {
   const pathname = usePathname()
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 40)
+    let current = window.scrollY > 40
+    setScrolled(current)
+
+    const onScroll = () => {
+      const next = window.scrollY > 40
+      if (next === current) return
+      current = next
+      setScrolled(next)
+    }
+
     window.addEventListener('scroll', onScroll, { passive: true })
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
