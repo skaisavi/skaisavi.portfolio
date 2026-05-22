@@ -73,6 +73,7 @@ export const PROJECTS: Project[] = [
     title: 'MuseVault',
     tag: 'Case Study',
     gradient: 'linear-gradient(135deg,#130f24,#44215f,#d45aa8)',
+    image: '/projects/musevault.svg',
     href: 'https://www.figma.com/design/v7MqA8mG9hY66GsrZ9ACLr/MuseVault-%E2%80%94-Portfolio-Case-Study?node-id=0-1&t=ZAF53OzsOeHGHtac-1',
     wide: true,
     description:

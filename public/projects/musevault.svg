@@ -1,0 +1,91 @@
+<svg width="1438" height="981" viewBox="0 0 1438 981" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1438" height="981" fill="#F3EEE8"/>
+  <text x="92" y="50" fill="#B8B1AA" font-family="Inter, Arial, sans-serif" font-size="12">Login Screen</text>
+  <rect x="92" y="59" width="550" height="777" fill="url(#leftWash)"/>
+  <rect x="643" y="59" width="692" height="778" fill="#FCFCFC" stroke="#1686E8" stroke-width="2"/>
+
+  <g filter="url(#cardShadow)" transform="translate(160 165) rotate(4)">
+    <rect width="174" height="110" rx="16" fill="#FBFAF8"/>
+    <rect width="174" height="67" rx="16" fill="#DED5ED"/>
+    <path d="M0 67H174V93C174 103 166 110 156 110H18C8 110 0 103 0 93V67Z" fill="#FCFAFA"/>
+    <path d="M17 110C17 80 40 77 52 77C64 77 83 84 83 110H17Z" fill="#BCA9E6"/>
+  </g>
+
+  <g filter="url(#cardShadow)" transform="translate(368 249) rotate(-3)">
+    <rect width="155" height="104" rx="16" fill="#FBFAF8"/>
+    <rect width="155" height="63" rx="16" fill="#EEE8E3"/>
+    <path d="M0 63H155V88C155 97 148 104 139 104H16C7 104 0 97 0 88V63Z" fill="#FCFAFA"/>
+    <path d="M17 104C17 75 40 73 51 73C63 73 78 81 78 104H17Z" fill="#EFE5D3"/>
+  </g>
+
+  <g filter="url(#cardShadow)" transform="translate(195 389) rotate(1)">
+    <rect width="190" height="122" rx="16" fill="#FBFAF8"/>
+    <rect width="190" height="68" rx="16" fill="#DCE4D8"/>
+    <path d="M0 68H190V105C190 114 183 122 174 122H16C7 122 0 114 0 105V68Z" fill="#FBFAFE"/>
+    <path d="M13 122C19 96 43 85 67 85C91 85 113 97 117 122H13Z" fill="#B9C9AD"/>
+  </g>
+
+  <text x="161" y="709" fill="#161312" font-family="Georgia, 'Times New Roman', serif" font-size="28">Your creative</text>
+  <text x="161" y="744" fill="#161312" font-family="Georgia, 'Times New Roman', serif" font-size="28">memory lives here.</text>
+
+  <g filter="url(#panelShadow)">
+    <rect x="800" y="199" width="380" height="499" rx="26" fill="white"/>
+  </g>
+  <text x="834" y="251" fill="#1A1715" font-family="Georgia, 'Times New Roman', serif" font-size="17">MuseVault ✦</text>
+  <text x="834" y="313" fill="#1A1715" font-family="Georgia, 'Times New Roman', serif" font-size="33">Welcome back</text>
+  <text x="834" y="338" fill="#7A746F" font-family="Inter, Arial, sans-serif" font-size="14">Continue building your creative vault.</text>
+
+  <text x="834" y="373" fill="#1A1715" font-family="Inter, Arial, sans-serif" font-size="12">Email address</text>
+  <rect x="834" y="382" width="310" height="42" rx="12" fill="#F5F1EC" stroke="#DED6CD"/>
+  <text x="849" y="407" fill="#B5AAA0" font-family="Inter, Arial, sans-serif" font-size="13">you@studio.com</text>
+
+  <text x="834" y="448" fill="#1A1715" font-family="Inter, Arial, sans-serif" font-size="12">Password</text>
+  <rect x="834" y="459" width="310" height="41" rx="12" fill="#F5F1EC" stroke="#DED6CD"/>
+  <text x="849" y="483" fill="#B5AAA0" font-family="Inter, Arial, sans-serif" font-size="18" letter-spacing="2">••••••••••••</text>
+
+  <g filter="url(#buttonShadow)">
+    <rect x="834" y="518" width="84" height="31" rx="15.5" fill="#1B1918"/>
+  </g>
+  <text x="849" y="538" fill="white" font-family="Inter, Arial, sans-serif" font-size="13">Sign in →</text>
+
+  <line x1="833" y1="573" x2="940" y2="573" stroke="#E4DDD7"/>
+  <text x="951" y="578" fill="#8B837C" font-family="Inter, Arial, sans-serif" font-size="12">or continue with</text>
+  <line x1="1045" y1="573" x2="1144" y2="573" stroke="#E4DDD7"/>
+  <rect x="831" y="592" width="86" height="34" rx="17" fill="white" stroke="#DED6CD"/>
+  <text x="854" y="614" fill="#1A1715" font-family="Inter, Arial, sans-serif" font-size="13">Google</text>
+  <text x="894" y="670" fill="#8B837C" font-family="Inter, Arial, sans-serif" font-size="12">Don't have an account? Create one →</text>
+
+  <rect x="470" y="892" width="500" height="48" rx="10" fill="#262625" filter="url(#toolbarShadow)"/>
+  <g fill="#F7F7F7" opacity="0.9">
+    <rect x="489" y="904" width="32" height="32" rx="6" fill="#1686E8"/>
+    <path d="M492 908L509 914L501 919L497 928L492 908Z" stroke="white" stroke-width="1.4" fill="none"/>
+    <text x="545" y="924" font-family="Inter, Arial, sans-serif" font-size="20">#</text>
+    <rect x="600" y="909" width="15" height="15" rx="2" stroke="white" fill="none"/>
+    <text x="657" y="924" font-family="Inter, Arial, sans-serif" font-size="22">⌁</text>
+    <text x="716" y="924" font-family="Inter, Arial, sans-serif" font-size="20">T</text>
+    <circle cx="780" cy="916" r="8" stroke="white" fill="none"/>
+    <text x="828" y="924" font-family="Inter, Arial, sans-serif" font-size="18">✣</text>
+    <rect x="869" y="899" width="95" height="34" rx="5" fill="#343434"/>
+    <text x="881" y="923" font-family="Inter, Arial, sans-serif" font-size="18">〽  ⌗  ‹/›</text>
+  </g>
+
+  <defs>
+    <linearGradient id="leftWash" x1="366" y1="59" x2="366" y2="836" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F6D5D1"/>
+      <stop offset="0.45" stop-color="#DFD7F1"/>
+      <stop offset="1" stop-color="#F0E8D9"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-24" y="-24" width="238" height="172" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="16" stdDeviation="18" flood-color="#C9BBD0" flood-opacity="0.32"/>
+    </filter>
+    <filter id="panelShadow" x="760" y="159" width="460" height="579" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="28" flood-color="#D8D0C7" flood-opacity="0.38"/>
+    </filter>
+    <filter id="buttonShadow" x="824" y="508" width="104" height="51" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="8" stdDeviation="7" flood-color="#17100B" flood-opacity="0.24"/>
+    </filter>
+    <filter id="toolbarShadow" x="464" y="886" width="512" height="60" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+</svg>
