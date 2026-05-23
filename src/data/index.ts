@@ -158,13 +158,15 @@ export const PROJECTS: Project[] = [
     tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
   },
   {
-    id: 'brand-next',
-    title: 'Brand Identity',
-    tag: 'Coming Soon',
-    gradient: 'linear-gradient(135deg,#1a1008,#2e1f0a,#4a3010)',
-    comingSoon: true,
-    description: 'Full brand identity system — logo, type, colour, and component library.',
-    tech: ['Figma', 'Design Systems'],
+    id: 'auramarket',
+    title: 'AuraMarket',
+    tag: 'E-Commerce',
+    gradient: 'linear-gradient(135deg,#141a12,#2a3826,#3d5c38)',
+    image: '/projects/auramarket.webp',
+    href: 'https://auramarket-chi.vercel.app/',
+    description:
+      'Premium botanical wellness store — product catalogue, curated collections, and a campaign system designed for a quieter, more intentional way of shopping.',
+    tech: ['React', 'TypeScript', 'CSS3'],
   },
   {
     id: 'fullstack-next',
