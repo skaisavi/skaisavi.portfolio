@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import SiteShell from '@/components/SiteShell'
 import SkillCloud from '@/components/SkillCloud'
+import Reveal from '@/components/Reveal'
 
 export const metadata = {
   title: 'Skills — Skaiste Savitri',
@@ -23,10 +24,12 @@ export default function SkillsPage() {
 
         <section className="skills-body">
           <div className="container">
-            <p className="skills-intro">
-              Specialising in modern frontend development with a deep love for interaction design,
-              smooth animations, and pixel-perfect detail.
-            </p>
+            <Reveal>
+              <p className="skills-intro">
+                Specialising in modern frontend development with a deep love for interaction design,
+                smooth animations, and pixel-perfect detail.
+              </p>
+            </Reveal>
 
             <SkillCloud />
 

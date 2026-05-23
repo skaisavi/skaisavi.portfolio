@@ -1,5 +1,6 @@
 import SiteShell from '@/components/SiteShell'
 import ContactForm from '@/components/ContactForm'
+import Reveal from '@/components/Reveal'
 
 export const metadata = {
   title: 'Contact — Skaiste Savitri',
@@ -16,14 +17,18 @@ export default function ContactPage() {
           <div className="container">
             <div className="contact-inner">
               <p className="page-eyebrow">Get in touch</p>
-              <h1 className="contact-title">
-                Let&apos;s build<br />
-                <em>something great.</em>
-              </h1>
-              <p className="contact-desc">
+              <Reveal>
+                <h1 className="contact-title">
+                  Let&apos;s build<br />
+                  <em>something great.</em>
+                </h1>
+              </Reveal>
+              <Reveal delay={0.1}>
+                <p className="contact-desc">
                 Open to full-time roles, freelance projects, and exciting collaborations.
                 If you have an idea or a project in mind — I&apos;d love to hear about it.
-              </p>
+                </p>
+              </Reveal>
 
               <ContactForm />
 

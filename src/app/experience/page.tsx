@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import SiteShell from '@/components/SiteShell'
+import Reveal from '@/components/Reveal'
 import { EXPERIENCE } from '@/data'
 
 export const metadata = {
@@ -28,7 +29,9 @@ export default function ExperiencePage() {
                 <div className="exp-card" key={i}>
                   <div className="exp-hdr">
                     <div>
-                      <h2 className="exp-role">{item.role}</h2>
+                      <Reveal delay={i * 0.08}>
+                        <h2 className="exp-role">{item.role}</h2>
+                      </Reveal>
                       <p className="exp-co">{item.company}</p>
                     </div>
                     <div className="exp-right">

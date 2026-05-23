@@ -6,3 +6,5 @@
 @import '../styles/responsive.css';
 
 @tailwind utilities;
+
+.reveal-wrap { display: block; overflow: hidden; }

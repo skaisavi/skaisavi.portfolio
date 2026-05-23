@@ -169,7 +169,11 @@
   position: relative; overflow: hidden;
   color: inherit;
 }
-.pc-img { object-fit: cover; object-position: top; }
+.pc-img {
+  object-fit: cover; object-position: top;
+  transition: transform 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.pc-media:hover .pc-img { transform: scale(1.06); }
 .pc-tag { position: relative; z-index: 1; }
 .project-card.wide .pc-media { height: 340px; }
 .project-card-motion-atelier .pc-img {

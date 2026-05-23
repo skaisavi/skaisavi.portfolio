@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import SiteShell from '@/components/SiteShell'
+import Reveal from '@/components/Reveal'
 
 export const metadata = {
   title: 'About — Skaiste Savitri',
@@ -22,9 +23,11 @@ export default function AboutPage() {
 
         <section className="about-body-section">
           <div className="container">
-            <p className="about-lead">
-              I build things that feel <em>beautiful</em> — in code and in Figma.
-            </p>
+            <Reveal>
+              <p className="about-lead">
+                I build things that feel <em>beautiful</em> — in code and in Figma.
+              </p>
+            </Reveal>
             <div className="about-text-grid">
               <div className="about-text-col">
                 <p>
@@ -68,9 +71,11 @@ export default function AboutPage() {
         <section className="about-interests">
           <div className="container">
             <span className="sec-tag light">What I love</span>
-            <h2 className="sec-h light" style={{ marginBottom: 8 }}>
-              Design interests &amp; <em>obsessions</em>.
-            </h2>
+            <Reveal delay={0.05}>
+              <h2 className="sec-h light" style={{ marginBottom: 8 }}>
+                Design interests &amp; <em>obsessions</em>.
+              </h2>
+            </Reveal>
             <p style={{ color: 'rgba(255,255,255,.40)', fontSize: '1rem', lineHeight: 1.75, maxWidth: 560, marginBottom: 0 }}>
               The things that make me excited to open my laptop every morning.
             </p>
