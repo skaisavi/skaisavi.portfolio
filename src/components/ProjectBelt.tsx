@@ -33,6 +33,7 @@ export default function ProjectBelt() {
                     fill
                     sizes="320px"
                     className="belt-card-img"
+                    unoptimized={project.image.endsWith('.svg')}
                   />
                 )}
                 <span className="belt-card-tag">{project.tag}</span>

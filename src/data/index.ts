@@ -50,7 +50,7 @@ export const PROJECTS: Project[] = [
     title: 'AutoDrive',
     tag: 'Marketplace',
     gradient: 'linear-gradient(135deg,#0d1117,#1a1f3c,#0f2167)',
-    image: '/projects/autodrive.png',
+    image: '/projects/autodrive.webp',
     href: 'https://autodrive-delta.vercel.app',
     wide: true,
     description:
@@ -85,7 +85,7 @@ export const PROJECTS: Project[] = [
     title: 'Motion Atelier',
     tag: 'Motion UI',
     gradient: 'linear-gradient(135deg,#17110c,#4b3728,#d6b48c)',
-    image: '/projects/motion-atelier.png',
+    image: '/projects/motion-atelier.webp',
     href: 'https://motion-atelier.vercel.app/',
     wide: true,
     description:
@@ -97,7 +97,7 @@ export const PROJECTS: Project[] = [
     title: 'Prime Steak & Grill',
     tag: 'Restaurant',
     gradient: 'linear-gradient(135deg,#1a0800,#3d1200,#7c2d00)',
-    image: '/projects/prime-steak.png',
+    image: '/projects/prime-steak.webp',
     href: 'https://prime-react-green.vercel.app',
     description:
       'Slick restaurant website — visual menu, atmosphere showcase, smooth experience. Fast React SPA with zero flicker.',
@@ -108,7 +108,7 @@ export const PROJECTS: Project[] = [
     title: 'Debeselis',
     tag: 'Banking App',
     gradient: 'linear-gradient(135deg,#0a1628,#1a3a6b,#7ba7e8)',
-    image: '/projects/debeselis.png',
+    image: '/projects/debeselis.webp',
     href: 'https://debeselis-app.vercel.app/login',
     description:
       'Cloud banking — animated login, OTP flow, balance dashboard with transaction history. Framer Motion throughout for buttery-smooth micro-interactions.',
@@ -119,7 +119,7 @@ export const PROJECTS: Project[] = [
     title: 'SaaS Dashboard',
     tag: 'UI Design',
     gradient: 'linear-gradient(135deg,#0d1b2a,#1b2e4b,#1e3a6e)',
-    image: '/projects/saas-dashboard.png',
+    image: '/projects/saas-dashboard.webp',
     href: 'https://remix-read-74222076.figma.site/',
     wide: true,
     description:
@@ -131,7 +131,7 @@ export const PROJECTS: Project[] = [
     title: 'Lumière',
     tag: 'Branding',
     gradient: 'linear-gradient(135deg,#1a0e2e,#3b1f6b,#7c4dbe)',
-    image: '/projects/lumiere.png',
+    image: '/projects/lumiere.webp',
     href: 'https://twirl-clever-74917925.figma.site/',
     description:
       'Refined UI design centred on atmosphere and light — warm gradients, considered typography, and an editorial brand identity.',
@@ -147,22 +147,15 @@ export const PROJECTS: Project[] = [
     tech: ['Figma', 'UI Design'],
   },
   {
-    id: 'dev-next',
-    title: 'Dev Project',
-    tag: 'Coming Soon',
-    gradient: 'linear-gradient(135deg,#1a0f1a,#3a1a3a,#6b2d6b)',
-    comingSoon: true,
-    description: 'Building something new in React — details dropping very soon.',
-    tech: ['React', 'TypeScript'],
-  },
-  {
-    id: 'motion-next',
-    title: 'Motion Project',
-    tag: 'Coming Soon',
-    gradient: 'linear-gradient(135deg,#0d1117,#1c1a2e,#2a1f4e)',
-    comingSoon: true,
-    description: 'An animation-heavy UI experiment — Framer Motion meets editorial layout.',
-    tech: ['Framer Motion', 'React'],
+    id: 'nova',
+    title: 'NOVA',
+    tag: 'SaaS App',
+    gradient: 'linear-gradient(135deg,#060f10,#0d2828,#0a4a4a)',
+    image: '/projects/nova.svg',
+    href: 'https://nova-savi.vercel.app/',
+    description:
+      'Premium full-stack project command centre — workspace pulse, task tracking, and client-ready dashboards built for freelancers and creative teams.',
+    tech: ['Next.js', 'TypeScript', 'PostgreSQL', 'Prisma'],
   },
   {
     id: 'brand-next',

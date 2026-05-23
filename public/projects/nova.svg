@@ -1,0 +1,156 @@
+<svg width="1880" height="930" viewBox="0 0 1880 930" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1880" height="930" fill="#0B1219"/>
+  <rect width="1880" height="930" fill="url(#bg)"/>
+  <g opacity=".16">
+    <path d="M0 38.5H1880M0 128.5H1880M0 218.5H1880M0 308.5H1880M0 398.5H1880M0 488.5H1880M0 578.5H1880M0 668.5H1880M0 758.5H1880M0 848.5H1880" stroke="white"/>
+    <path d="M112.5 0V930M202.5 0V930M292.5 0V930M382.5 0V930M472.5 0V930M562.5 0V930M652.5 0V930M742.5 0V930M832.5 0V930M922.5 0V930M1012.5 0V930M1102.5 0V930M1192.5 0V930M1282.5 0V930M1372.5 0V930M1462.5 0V930M1552.5 0V930M1642.5 0V930M1732.5 0V930M1822.5 0V930" stroke="white"/>
+  </g>
+
+  <g filter="url(#soft)">
+    <circle cx="235" cy="108" r="260" fill="#123E3D" opacity=".42"/>
+    <circle cx="1405" cy="462" r="410" fill="#5A2647" opacity=".31"/>
+    <circle cx="1028" cy="730" r="330" fill="#162B3C" opacity=".35"/>
+  </g>
+
+  <g transform="translate(340 18)">
+    <circle cx="23" cy="22" r="22" fill="#F8FBFF"/>
+    <path d="M24 12.8l1.7 5.6 5.6 1.7-5.6 1.7-1.7 5.6-1.7-5.6-5.6-1.7 5.6-1.7 1.7-5.6Z" stroke="#10131B" stroke-width="2" stroke-linejoin="round"/>
+    <path d="M15 27.5l.8 2.6 2.6.8-2.6.8-.8 2.6-.8-2.6-2.6-.8 2.6-.8.8-2.6Z" stroke="#10131B" stroke-width="1.7" stroke-linejoin="round"/>
+    <text x="56" y="20" fill="#F8FBFF" font-family="Georgia,serif" font-size="18" font-weight="700">NOVA</text>
+    <text x="56" y="40" fill="#AEB8C8" font-family="Georgia,serif" font-size="12">Project command centre</text>
+  </g>
+
+  <g transform="translate(1223 35)" fill="#C4BBCB" font-family="Georgia,serif" font-size="14" font-weight="700">
+    <text>Features</text>
+    <text x="100">Dashboard</text>
+  </g>
+  <g transform="translate(1418 22)">
+    <rect width="138" height="36" rx="18" fill="#7CEBFF"/>
+    <text x="18" y="23" fill="#111018" font-family="Georgia,serif" font-size="12" font-weight="700">Launch preview</text>
+    <path d="M112 13l7 5-7 5M105 18h14" stroke="#111018" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <g transform="translate(341 150)">
+    <rect width="195" height="27" rx="13.5" fill="#264743" stroke="#55726D"/>
+    <circle cx="17" cy="13.5" r="4" fill="#77F1C9"/>
+    <path d="M31 11c2.2 1.6 2.2 3.4 0 5M36 9c3.7 2.8 3.7 6.2 0 9" stroke="#BEF5E7" stroke-width="1.2" stroke-linecap="round"/>
+    <text x="49" y="18" fill="#F5FBF9" font-family="Georgia,serif" font-size="12" text-decoration="underline">Realtime-ready architecture</text>
+    <rect x="208" width="184" height="27" rx="13.5" fill="#252934" stroke="#3E4351"/>
+    <text x="223" y="18" fill="#B9BEC9" font-family="Georgia,serif" font-size="12">Prisma + PostgreSQL foundation</text>
+  </g>
+
+  <g transform="translate(340 210)" fill="#F8FAFF" font-family="Georgia,serif">
+    <text font-size="74" letter-spacing="-2">
+      <tspan x="0" y="56">Command every</tspan>
+      <tspan x="0" y="128">project from</tspan>
+      <tspan x="0" y="200">one luminous</tspan>
+      <tspan x="0" y="272">workspace.</tspan>
+    </text>
+    <text y="332" fill="#AFB7C8" font-size="17">
+      <tspan x="0">NOVA is a premium full-stack command centre for freelancers, junior</tspan>
+      <tspan x="0" dy="32">developers, portfolio builders, and creative teams who need work to feel</tspan>
+      <tspan x="0" dy="32">calm, current, and client-ready.</tspan>
+    </text>
+    <g transform="translate(0 438)">
+      <rect width="203" height="49" rx="24.5" fill="#7CEBFF"/>
+      <text x="25" y="30" fill="#15151C" font-size="15" font-weight="700">Explore dashboard</text>
+      <path d="M166 19l8 5.5-8 5.5M158 24.5h16" stroke="#15151C" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+      <rect x="215" width="142" height="49" rx="24.5" fill="#29323D" stroke="#4D5664"/>
+      <text x="248" y="30" fill="#F5F7FB" font-size="14" font-weight="700">See workflow</text>
+    </g>
+    <g transform="translate(0 527)">
+      <g>
+        <rect width="170" height="93" rx="28" fill="#202832" stroke="#3C4652"/>
+        <text x="17" y="39" fill="#F8FAFF" font-size="24" font-weight="700">03</text>
+        <text x="17" y="69" fill="#B8BFCA" font-size="12">Active projects</text>
+      </g>
+      <g transform="translate(182)">
+        <rect width="170" height="93" rx="28" fill="#202832" stroke="#3C4652"/>
+        <text x="17" y="39" fill="#F8FAFF" font-size="24" font-weight="700">35</text>
+        <text x="17" y="69" fill="#B8BFCA" font-size="12">Completed tasks</text>
+      </g>
+      <g transform="translate(364)">
+        <rect width="170" height="93" rx="28" fill="#202832" stroke="#3C4652"/>
+        <text x="17" y="39" fill="#F8FAFF" font-size="24" font-weight="700">92%</text>
+        <text x="17" y="69" fill="#B8BFCA" font-size="12">Workspace health</text>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(930 154)">
+    <rect width="626" height="673" rx="31" fill="#4B4652" fill-opacity=".75" stroke="#665C6B"/>
+    <text x="18" y="32" fill="#C4CCD9" font-family="Georgia,serif" font-size="14">Workspace pulse</text>
+    <text x="18" y="65" fill="#F6F8FF" font-family="Georgia,serif" font-size="24" font-weight="700">Aurora Brand System</text>
+    <line x1="17" x2="610" y1="90" y2="90" stroke="#73707B" opacity=".45"/>
+    <circle cx="586" cy="45" r="23" fill="#534D5A" stroke="#6D6470"/>
+    <path d="M580 36v18M592 36v18M575 42h8a4 4 0 0 1 0 8h-2a4 4 0 0 1 0-8h18M599 42h-8a4 4 0 0 0 0 8h2a4 4 0 0 0 0-8h-18" stroke="#7CEBFF" stroke-width="2.2" stroke-linecap="round"/>
+
+    <g transform="translate(17 110)">
+      <rect width="334" height="283" rx="24" fill="#555762" stroke="#73717D"/>
+      <rect x="21" y="21" width="57" height="25" rx="12.5" fill="#55736D" stroke="#85B5AA"/>
+      <text x="34" y="37" fill="#E4FFF7" font-family="Georgia,serif" font-size="12" font-weight="700">Active</text>
+      <rect x="88" y="21" width="47" height="25" rx="12.5" fill="#625D4D" stroke="#9B8F61"/>
+      <text x="103" y="37" fill="#FFF4BB" font-family="Georgia,serif" font-size="12" font-weight="700">High</text>
+      <text x="21" y="84" fill="#C6CCD8" font-family="Georgia,serif" font-size="14">
+        <tspan x="21">Identity refresh, launch deck, and client portal for a</tspan>
+        <tspan x="21" dy="23">boutique creative team.</tspan>
+      </text>
+      <text x="21" y="153" fill="#C6CCD8" font-family="Georgia,serif" font-size="13">Progress</text>
+      <text x="288" y="153" fill="#F7F9FF" font-family="Georgia,serif" font-size="14" font-weight="700">72%</text>
+      <rect x="21" y="166" width="292" height="7" rx="3.5" fill="#74727C"/>
+      <rect x="21" y="166" width="211" height="7" rx="3.5" fill="url(#progress)"/>
+    </g>
+
+    <g transform="translate(368 110)">
+      <rect width="242" height="133" rx="22" fill="#5A505B" stroke="#776D78"/>
+      <path d="M24 25h14v14H24zM27 21v7M35 21v7M24 31h14" stroke="#7CEBFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="21" y="86" fill="#F8FAFF" font-family="Georgia,serif" font-size="32" font-weight="700">14 days</text>
+      <text x="21" y="108" fill="#C4CCD9" font-family="Georgia,serif" font-size="12">until next major delivery</text>
+    </g>
+    <g transform="translate(368 260)">
+      <rect width="242" height="133" rx="22" fill="#5A505B" stroke="#776D78"/>
+      <path d="M23 25h16v12H28l-5 5V25z" stroke="#7CEBFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="21" y="86" fill="#F8FAFF" font-family="Georgia,serif" font-size="32" font-weight="700">18</text>
+      <text x="21" y="108" fill="#C4CCD9" font-family="Georgia,serif" font-size="12">comments and decisions captured</text>
+    </g>
+
+    <g transform="translate(17 410)" font-family="Georgia,serif">
+      <g>
+        <rect width="593" height="74" rx="25" fill="#55515C" stroke="#73717D"/>
+        <text x="16" y="30" fill="#F7F9FF" font-size="14" font-weight="700">Finalize dashboard preview composition</text>
+        <text x="16" y="51" fill="#C4CCD9" font-size="12">Aurora Brand System</text>
+        <circle cx="566" cy="36" r="8.5" stroke="#7CEBFF" stroke-width="2"/>
+        <path d="M562 35.5l3 3 5-6" stroke="#7CEBFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g transform="translate(0 85)">
+        <rect width="593" height="74" rx="25" fill="#55515C" stroke="#73717D"/>
+        <text x="16" y="30" fill="#F7F9FF" font-size="14" font-weight="700">Write onboarding microcopy variants</text>
+        <text x="16" y="51" fill="#C4CCD9" font-size="12">Pulse SaaS Redesign</text>
+        <circle cx="566" cy="36" r="8.5" stroke="#7CEBFF" stroke-width="2"/>
+        <path d="M562 35.5l3 3 5-6" stroke="#7CEBFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <g transform="translate(0 170)">
+        <rect width="593" height="74" rx="25" fill="#55515C" stroke="#73717D"/>
+        <text x="16" y="30" fill="#F7F9FF" font-size="14" font-weight="700">Review Prisma schema with mentor notes</text>
+        <text x="16" y="51" fill="#C4CCD9" font-size="12">Junior Dev Portfolio</text>
+        <circle cx="566" cy="36" r="8.5" stroke="#7CEBFF" stroke-width="2"/>
+        <path d="M562 35.5l3 3 5-6" stroke="#7CEBFF" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+    </g>
+  </g>
+
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1880" y1="0" y2="930" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#142D2E"/>
+      <stop offset=".47" stop-color="#111823"/>
+      <stop offset="1" stop-color="#211423"/>
+    </linearGradient>
+    <linearGradient id="progress" x1="21" x2="232" y1="166" y2="173" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#72D9F2"/>
+      <stop offset="1" stop-color="#72DCA6"/>
+    </linearGradient>
+    <filter id="soft" x="-200" y="-360" width="2000" height="1500" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="90"/>
+    </filter>
+  </defs>
+</svg>

@@ -46,6 +46,7 @@ export default function WorkPage() {
                         fill
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
                         className="pc-img"
+                        unoptimized={project.image.endsWith('.svg')}
                       />
                     )}
                     <span className="pc-tag">{project.tag}</span>
