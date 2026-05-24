@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import SiteShell from '@/components/SiteShell'
 import Reveal from '@/components/Reveal'
+import SplitText from '@/components/SplitText'
 import { EXPERIENCE } from '@/data'
 
 export const metadata = {
@@ -15,10 +16,8 @@ export default function ExperiencePage() {
         <div className="page-header">
           <div className="container">
             <p className="page-eyebrow">Career</p>
-            <h1 className="page-title">
-              Where I&apos;ve<br />
-              <em>been.</em>
-            </h1>
+            <SplitText text="Where I've" as="h1" className="page-title" delay={0.05} />
+            <SplitText text="been." as="div" className="page-title page-title-italic" delay={0.28} />
           </div>
         </div>
 

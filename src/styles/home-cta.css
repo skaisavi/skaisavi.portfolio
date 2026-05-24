@@ -2,8 +2,10 @@
    HOME CTA
 â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 .home-cta {
-  padding: 140px 0 130px;
+  min-height: 100vh; padding: 80px 0;
   position: relative; overflow: hidden;
+  display: flex; align-items: center;
+  background: transparent;
   border-top: 1px solid rgba(255,255,255,.07);
 }
 .home-cta::before {
@@ -17,16 +19,16 @@
   background: radial-gradient(circle, rgba(20,184,166,.10) 0%, transparent 65%);
 }
 .home-cta-watermark {
-  position: absolute; bottom: -.15em; right: -.04em;
+  position: absolute; bottom: -.1em; right: -.04em;
   font-family: var(--font-display); font-size: clamp(100px, 20vw, 240px);
   font-weight: 800; letter-spacing: -.04em; line-height: 1;
-  color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.04);
+  color: transparent; -webkit-text-stroke: 1px rgba(255,255,255,.15);
   pointer-events: none; user-select: none;
 }
 .home-cta .page-eyebrow { margin-bottom: 24px; }
 .home-cta-h {
   font-family: var(--font-display);
-  font-size: clamp(3.5rem, 8vw, 7rem); font-weight: 800;
+  font-size: clamp(4rem, 9vw, 9rem); font-weight: 800;
   letter-spacing: -.05em; line-height: .92; color: #fff;
   margin-bottom: 56px;
 }

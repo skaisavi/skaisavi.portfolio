@@ -1,6 +1,7 @@
 import SiteShell from '@/components/SiteShell'
 import ContactForm from '@/components/ContactForm'
 import Reveal from '@/components/Reveal'
+import SplitText from '@/components/SplitText'
 
 export const metadata = {
   title: 'Contact — Skaiste Savitri',
@@ -17,12 +18,8 @@ export default function ContactPage() {
           <div className="container">
             <div className="contact-inner">
               <p className="page-eyebrow">Get in touch</p>
-              <Reveal>
-                <h1 className="contact-title">
-                  Let&apos;s build<br />
-                  <em>something great.</em>
-                </h1>
-              </Reveal>
+              <SplitText text="Let's build" as="h1" className="contact-title" delay={0.05} />
+              <SplitText text="something great." as="div" className="contact-title contact-title-italic" delay={0.22} />
               <Reveal delay={0.1}>
                 <p className="contact-desc">
                 Open to full-time roles, freelance projects, and exciting collaborations.

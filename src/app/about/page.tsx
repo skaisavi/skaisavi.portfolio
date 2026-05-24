@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import SiteShell from '@/components/SiteShell'
 import Reveal from '@/components/Reveal'
+import SplitText from '@/components/SplitText'
+import Counter from '@/components/Counter'
 
 export const metadata = {
   title: 'About — Skaiste Savitri',
@@ -14,10 +16,8 @@ export default function AboutPage() {
         <div className="page-header">
           <div className="container">
             <p className="page-eyebrow">About me</p>
-            <h1 className="page-title">
-              Hello,<br />
-              <em>I&apos;m Skaiste.</em>
-            </h1>
+            <SplitText text="Hello," as="h1" className="page-title" delay={0.05} />
+            <SplitText text="I'm Skaiste." as="div" className="page-title page-title-italic" delay={0.2} />
           </div>
         </div>
 
@@ -51,6 +51,23 @@ export default function AboutPage() {
                   Say hello →
                 </Link>
               </div>
+            </div>
+
+            {/* Stats counters */}
+            <div className="about-stats-row">
+              {[
+                { to: 10, suffix: '+', label: 'Projects built' },
+                { to: 2,  suffix: '+', label: 'Years experience' },
+                { to: 8,  suffix: '+', label: 'Live deployments' },
+                { to: 12, suffix: '+', label: 'Technologies' },
+              ].map(({ to, suffix, label }) => (
+                <div className="about-stat" key={label}>
+                  <p className="about-stat-num">
+                    <Counter to={to} suffix={suffix} duration={1.6} />
+                  </p>
+                  <p className="about-stat-label">{label}</p>
+                </div>
+              ))}
             </div>
 
             <div className="about-cards-row" style={{ marginTop: 56 }}>

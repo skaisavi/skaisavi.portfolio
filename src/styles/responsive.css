@@ -2,7 +2,8 @@
 @media (max-width: 1024px) {
   .site-nav { padding: 12px 20px; }
   .hero-bar { padding: 24px 28px 0; margin-top: 80px; }
-  .hero-hw, .hero-chips, .hero-bot { padding: 0 28px; }
+  .hero-hw, .hero-chips { padding: 0 28px; }
+  .about-stats-row { grid-template-columns: repeat(2, 1fr); }
   .nav-links, .nav-cv { display: none; }
   .nav-menu-btn { display: flex; }
   .container { padding: 0 24px; }
@@ -17,6 +18,11 @@
   .page-header { padding: 140px 0 80px; min-height: 46vh; }
   .pc-media { height: 220px; }
   .project-card.wide .pc-media { height: 280px; }
+  .home-skills-console { display: none; }
+  .dtc-grid { grid-template-columns: 1fr; gap: 48px; }
+  .dtc-section { min-height: auto; }
+  .dtc-sticky { position: relative; height: auto; padding: 80px 0; overflow: visible; }
+  .dtc-track { gap: 0; }
 }
 @media (max-width: 640px) {
   .particle-canvas,
@@ -33,13 +39,13 @@
     opacity: .55;
   }
 
-  .nav-pill,
   .mobile-menu,
   .hero-chip,
   .belt-card,
   .belt-card-tag,
   .feat-card,
-  .feat-card-tag {
+  .feat-card-tag,
+  .lsc {
     backdrop-filter: none;
     -webkit-backdrop-filter: none;
   }
@@ -51,31 +57,18 @@
   }
 
   .belt-card {
-    width: 280px;
+    width: 320px;
   }
 
-  .hero-h { font-size: clamp(2.5rem, 12vw, 4rem); }
-  .hero-chips {
-    margin-top: 22px;
-  }
-  .hero-bot {
-    justify-content: center;
-    padding: 0 20px;
-    margin-top: 32px;
-  }
-  .hero-typewriter {
-    width: min(100%, 340px);
-    justify-content: center;
-    text-align: center;
-    min-height: 2.4em;
-    line-height: 1.45;
-  }
-  .hero-typewriter span:first-child {
-    min-width: 0;
-    text-align: center;
-  }
+  .dtc-step > div { opacity: 1 !important; transform: none !important; }
+  .dtc-card { opacity: 1; }
+  .hero-role-heading { font-size: clamp(2.8rem, 11vw, 5rem); }
+  .hero-chips { margin-top: 22px; }
   .home-work-grid { grid-template-columns: 1fr; }
   .about-cards-row { grid-template-columns: 1fr; }
+  .about-stats-row { grid-template-columns: 1fr 1fr; }
+  .about-stat { border-bottom: 1px solid rgba(255,255,255,.08); }
+  .about-stat:nth-child(even) { border-right: none; }
   .exp-hdr { flex-direction: column; }
   .exp-right { align-items: flex-start; flex-direction: row; flex-wrap: wrap; }
   .exp-card { padding: 28px 28px; }
@@ -85,10 +78,52 @@
   .page-header { padding: 120px 0 64px; }
   .feat-card-media { height: 180px; }
   .pc-media { height: 190px; }
-  .home-about, .home-work, .home-skills, .home-cta { padding: 88px 0; }
+  .home-about .container, .home-skills .container { padding-top: 60px; padding-bottom: 60px; }
+  .home-work { padding: 60px 0; }
+  .home-cta { padding: 60px 0; }
   .home-cta-row { flex-direction: column; align-items: flex-start; gap: 28px; }
   .sec-h { margin-bottom: 52px; }
   .cf-row { grid-template-columns: 1fr; }
+  .scroll-story-section,
+  .scroll-story-section.home-work,
+  .scroll-story-section.home-about,
+  .scroll-story-section.home-skills,
+  .scroll-story-section.home-cta {
+    min-height: auto;
+  }
+  .story-stage {
+    min-height: auto;
+    position: relative;
+    padding: 72px 0;
+  }
+  .story-index {
+    display: none;
+  }
+  .story-content {
+    transform: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+  }
+  .story-grid,
+  .story-grid-skills {
+    grid-template-columns: 1fr;
+  }
+  .story-skill-cloud {
+    justify-content: flex-start;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .story-stage {
+    position: relative;
+  }
+  .story-content {
+    transform: none !important;
+    opacity: 1 !important;
+    filter: none !important;
+  }
+  .story-skill-cloud .skill-pill {
+    animation: none;
+  }
 }
 @media print {
   .loader, .cursor-dot, .cursor-ring, .scroll-progress,

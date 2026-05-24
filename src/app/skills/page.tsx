@@ -2,6 +2,7 @@ import Link from 'next/link'
 import SiteShell from '@/components/SiteShell'
 import SkillCloud from '@/components/SkillCloud'
 import Reveal from '@/components/Reveal'
+import SplitText from '@/components/SplitText'
 
 export const metadata = {
   title: 'Skills — Skaiste Savitri',
@@ -15,10 +16,8 @@ export default function SkillsPage() {
         <div className="page-header">
           <div className="container">
             <p className="page-eyebrow">Expertise</p>
-            <h1 className="page-title">
-              Tools of<br />
-              <em>my craft.</em>
-            </h1>
+            <SplitText text="Tools of" as="h1" className="page-title" delay={0.05} />
+            <SplitText text="my craft." as="div" className="page-title page-title-italic" delay={0.24} />
           </div>
         </div>
 

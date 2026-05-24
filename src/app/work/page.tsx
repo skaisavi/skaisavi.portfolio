@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import SiteShell from '@/components/SiteShell'
+import SplitText from '@/components/SplitText'
 import { PROJECTS } from '@/data'
 
 export const metadata = {
@@ -15,10 +16,8 @@ export default function WorkPage() {
         <div className="page-header">
           <div className="container">
             <p className="page-eyebrow">Selected work</p>
-            <h1 className="page-title">
-              Projects I&apos;m<br />
-              <em>proud of.</em>
-            </h1>
+            <SplitText text="Projects I'm" as="h1" className="page-title" delay={0.05} />
+            <SplitText text="proud of." as="div" className="page-title page-title-italic" delay={0.24} />
           </div>
         </div>
 
