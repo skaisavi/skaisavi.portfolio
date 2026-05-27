@@ -124,12 +124,12 @@ export const PROJECTS: Project[] = [
     tech: ['Figma', 'UI Design'],
   },
   {
-    id: 'brand-next',
-    title: 'Brand Project',
-    tag: 'Coming Soon',
-    gradient: 'linear-gradient(135deg,#1a0e2e,#3b1f6b,#7c4dbe)',
-    comingSoon: true,
-    description: 'A new branding project — something refined is on the way.',
+    id: 'floeur',
+    title: 'FloEUR',
+    tag: 'Branding',
+    gradient: 'linear-gradient(135deg,#16100c,#5a3520,#e7b776)',
+    href: 'https://www.figma.com/proto/sSqu9ONpWdsPVsSMPDsyBe/FloEUR?node-id=11-1455&p=f&t=uPCzBQHJ194bRGHm-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
+    description: 'v2 upgraded coming soon',
     tech: ['Figma', 'Branding'],
   },
   {
