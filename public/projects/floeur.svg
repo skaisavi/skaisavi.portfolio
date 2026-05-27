@@ -1,0 +1,59 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#F6F1E8"/>
+  <rect width="1400" height="36" fill="#BDBDBB"/>
+  <text x="681" y="23" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="13" font-weight="700">FloEUR</text>
+  <rect y="36" width="1400" height="52" fill="#FAF9F5"/>
+  <text x="58" y="63" fill="#102E24" font-family="Georgia, serif" font-size="21" font-style="italic">FloEUR</text>
+  <g fill="#606060" font-family="Arial, sans-serif" font-size="14">
+    <text x="260" y="64">Home</text>
+    <text x="320" y="64">Shop</text>
+    <text x="382" y="64">Subscriptions</text>
+    <text x="491" y="64">Weddings</text>
+    <text x="584" y="64">About</text>
+    <text x="654" y="64">Contact</text>
+  </g>
+  <text x="1294" y="64" fill="#102E24" font-family="Arial, sans-serif" font-size="14">Basket (3)</text>
+
+  <text x="58" y="121" fill="#77716A" font-family="Arial, sans-serif" font-size="13">Shop  /  Bouquets  /  The Amelie Bouquet</text>
+  <rect x="58" y="150" width="1284" height="700" rx="22" fill="#FFFFFF"/>
+
+  <rect x="88" y="192" width="496" height="468" rx="10" fill="#E9E3DA"/>
+  <text x="336" y="642" text-anchor="middle" fill="#A19991" font-family="Arial, sans-serif" font-size="12">blush rose bouquet on cream background</text>
+  <rect x="88" y="675" width="150" height="92" rx="8" fill="#E9E3DA"/>
+  <rect x="248" y="675" width="150" height="92" rx="8" fill="#E9E3DA"/>
+  <rect x="408" y="675" width="150" height="92" rx="8" fill="#E9E3DA"/>
+  <g fill="#A19991" font-family="Arial, sans-serif" font-size="11">
+    <text x="163" y="746" text-anchor="middle">blush rose detail</text>
+    <text x="323" y="746" text-anchor="middle">bouquet with ribbon</text>
+    <text x="483" y="746" text-anchor="middle">bouquet gift wrapped</text>
+  </g>
+
+  <rect x="628" y="195" width="50" height="24" rx="12" fill="#F4D7D4"/>
+  <text x="653" y="211" text-anchor="middle" fill="#4F3A35" font-family="Arial, sans-serif" font-size="10">Bestseller</text>
+  <text x="628" y="254" fill="#102E24" font-family="Georgia, serif" font-size="35" font-style="italic">The Amelie Bouquet</text>
+  <text x="628" y="320" fill="#202020" font-family="Arial, sans-serif" font-size="30" font-weight="700">£48</text>
+  <text x="628" y="350" fill="#6E6B68" font-family="Arial, sans-serif" font-size="15">Soft blush roses, cream lisianthus, and seasonal greenery wrapped with satin ribbon.</text>
+  <line x1="628" y1="388" x2="1312" y2="388" stroke="#E8E1D8"/>
+  <text x="628" y="426" fill="#6E6B68" font-family="Arial, sans-serif" font-size="14">A romantic hand-tied bouquet designed for birthdays, anniversaries, thank-you gifts, or simply brightening someone's day.</text>
+  <text x="628" y="452" fill="#6E6B68" font-family="Arial, sans-serif" font-size="14">Arranged fresh by our florists using seasonal stems, so every piece feels unique.</text>
+
+  <text x="628" y="510" fill="#222222" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2">SIZE</text>
+  <g font-family="Arial, sans-serif" font-size="13">
+    <rect x="628" y="523" width="88" height="34" rx="7" fill="#FFFFFF" stroke="#DED8D0"/>
+    <text x="672" y="545" text-anchor="middle" fill="#222222">Petite</text>
+    <rect x="724" y="523" width="88" height="34" rx="7" fill="#0D2B22"/>
+    <text x="768" y="545" text-anchor="middle" fill="#FFFFFF">Classic</text>
+    <rect x="820" y="523" width="88" height="34" rx="7" fill="#FFFFFF" stroke="#DED8D0"/>
+    <text x="864" y="545" text-anchor="middle" fill="#222222">Grand</text>
+    <rect x="916" y="523" width="88" height="34" rx="7" fill="#FFFFFF" stroke="#DED8D0"/>
+    <text x="960" y="545" text-anchor="middle" fill="#222222">Luxe</text>
+  </g>
+
+  <text x="628" y="590" fill="#222222" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2">DELIVERY DATE</text>
+  <rect x="628" y="603" width="684" height="38" rx="7" fill="#FFFFFF" stroke="#DED8D0"/>
+  <text x="640" y="627" fill="#6E6B68" font-family="Arial, sans-serif" font-size="14">Choose your preferred delivery date</text>
+  <rect x="628" y="695" width="684" height="48" rx="7" fill="#0D2B22"/>
+  <text x="970" y="725" text-anchor="middle" fill="#FFFFFF" font-family="Arial, sans-serif" font-size="15" font-weight="700">Add to Basket</text>
+  <rect x="628" y="755" width="684" height="40" rx="7" fill="#FFFFFF" stroke="#0D2B22"/>
+  <text x="970" y="780" text-anchor="middle" fill="#0D2B22" font-family="Arial, sans-serif" font-size="14">Add a handwritten note</text>
+</svg>
