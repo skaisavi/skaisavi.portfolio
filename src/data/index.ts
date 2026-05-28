@@ -135,6 +135,17 @@ export const PROJECTS: Project[] = [
     tech: ['Figma', 'Branding'],
   },
   {
+    id: 'floeur-v2',
+    title: 'FloEUR V2',
+    tag: 'Branding',
+    gradient: 'linear-gradient(135deg,#102e24,#d9c7ad,#f6f1e8)',
+    image: '/projects/floeur.svg',
+    href: 'https://www.figma.com/proto/MaQdHzpiCWLL4KXU9FD8RW/FloEUR-V2?node-id=46-2&p=f&t=MEdgGRybnCMJbqZM-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
+    description:
+      'A refined FloEUR V2 prototype with a more polished floral shopping flow, softer brand details, and upgraded presentation.',
+    tech: ['Figma', 'Branding', 'Prototype'],
+  },
+  {
     id: 'figma-next',
     title: 'Figma Project',
     tag: 'Coming Soon',
