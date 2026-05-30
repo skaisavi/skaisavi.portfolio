@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import SiteShell from '@/components/SiteShell'
 import SplitText from '@/components/SplitText'
+import FloeurCard from '@/components/FloeurCard'
 import { PROJECTS } from '@/data'
 
 export const metadata = {
@@ -24,56 +25,60 @@ export default function WorkPage() {
         <section className="work-body">
           <div className="container">
             <div className="projects-grid">
-              {PROJECTS.map(project => (
-                <article
-                  key={project.id}
-                  className={`project-card project-card-${project.id}${project.wide ? ' wide' : ''}`}
-                >
-                  <a
-                    href={project.comingSoon ? undefined : project.href}
-                    className="pc-media"
-                    style={project.image ? undefined : { background: project.gradient }}
-                    target={project.comingSoon ? undefined : '_blank'}
-                    rel={project.comingSoon ? undefined : 'noopener noreferrer'}
-                    aria-label={project.comingSoon ? undefined : `View ${project.title}`}
-                    tabIndex={project.comingSoon ? -1 : undefined}
+              {PROJECTS.map(project =>
+                project.versions ? (
+                  <FloeurCard key={project.id} project={project} />
+                ) : (
+                  <article
+                    key={project.id}
+                    className={`project-card project-card-${project.id}${project.wide ? ' wide' : ''}`}
                   >
-                    {project.image && (
-                      <Image
-                        src={project.image}
-                        alt={project.title}
-                        fill
-                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
-                        className="pc-img"
-                        unoptimized={project.image.endsWith('.svg')}
-                      />
-                    )}
-                    <span className="pc-tag">{project.tag}</span>
-                  </a>
-                  <div className="pc-body">
-                    <div className="pc-header">
-                      <h2 className="pc-title">{project.title}</h2>
-                      {project.comingSoon ? (
-                        <span className="pc-soon">Soon</span>
-                      ) : (
-                        <a
-                          href={project.href}
-                          className="pc-arrow"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          aria-label={`View ${project.title}`}
-                        >
-                          ↗
-                        </a>
+                    <a
+                      href={project.comingSoon ? undefined : project.href}
+                      className="pc-media"
+                      style={project.image ? undefined : { background: project.gradient }}
+                      target={project.comingSoon ? undefined : '_blank'}
+                      rel={project.comingSoon ? undefined : 'noopener noreferrer'}
+                      aria-label={project.comingSoon ? undefined : `View ${project.title}`}
+                      tabIndex={project.comingSoon ? -1 : undefined}
+                    >
+                      {project.image && (
+                        <Image
+                          src={project.image}
+                          alt={project.title}
+                          fill
+                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 600px"
+                          className="pc-img"
+                          unoptimized={project.image.endsWith('.svg')}
+                        />
                       )}
+                      <span className="pc-tag">{project.tag}</span>
+                    </a>
+                    <div className="pc-body">
+                      <div className="pc-header">
+                        <h2 className="pc-title">{project.title}</h2>
+                        {project.comingSoon ? (
+                          <span className="pc-soon">Soon</span>
+                        ) : (
+                          <a
+                            href={project.href}
+                            className="pc-arrow"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`View ${project.title}`}
+                          >
+                            ↗
+                          </a>
+                        )}
+                      </div>
+                      <p className="pc-desc">{project.description}</p>
+                      <div className="pc-tech">
+                        {project.tech.map(t => <span key={t}>{t}</span>)}
+                      </div>
                     </div>
-                    <p className="pc-desc">{project.description}</p>
-                    <div className="pc-tech">
-                      {project.tech.map(t => <span key={t}>{t}</span>)}
-                    </div>
-                  </div>
-                </article>
-              ))}
+                  </article>
+                )
+              )}
             </div>
 
             <div style={{ marginTop: 64, display: 'flex', gap: 12 }}>

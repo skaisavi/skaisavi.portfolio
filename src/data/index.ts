@@ -1,3 +1,12 @@
+export interface ProjectVersion {
+  title: string
+  href: string
+  image?: string
+  gradient: string
+  description: string
+  badge?: string
+}
+
 export interface Project {
   id: string
   title: string
@@ -9,6 +18,7 @@ export interface Project {
   wide?: boolean
   description: string
   tech: string[]
+  versions?: ProjectVersion[]
 }
 
 export interface ExperienceItem {
@@ -93,6 +103,42 @@ export const PROJECTS: Project[] = [
     tech: ['React', 'TypeScript', 'Framer Motion', 'Tailwind'],
   },
   {
+    id: 'aeris-tower',
+    title: 'AERIS Tower',
+    tag: 'Architecture',
+    gradient: 'linear-gradient(135deg,#06090e,#0f1c2e,#1a3252)',
+    wide: true,
+    description:
+      'Luxury office tower marketing site — interactive architectural showcase with parallax reveals, smooth scroll storytelling, and a leasing portal. Refined minimalism shipped from concept to live product.',
+    tech: ['Next.js', 'TypeScript', 'Tailwind', 'Framer Motion', 'Lenis'],
+    versions: [
+      {
+        title: 'Live Site',
+        badge: 'Live',
+        href: 'https://aeris-tower.vercel.app/',
+        gradient: 'linear-gradient(135deg,#06090e,#0f1c2e,#1a3252)',
+        description: 'The full marketing site — parallax reveals, office selector, and leasing portal.',
+      },
+      {
+        title: 'Figma Prototype',
+        badge: 'Figma',
+        href: 'https://www.figma.com/proto/hwVbfjp7ZrC1nHjZAf1ww7/AERIS-Tower?node-id=3-246&p=f&t=Faf8PeUPUzXWGfsc-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
+        gradient: 'linear-gradient(135deg,#07080d,#0e1626,#1d2d4a)',
+        description: 'The original design prototype — wireframes, interactions, and visual direction behind the build.',
+      },
+    ],
+  },
+  {
+    id: 'noirnest',
+    title: 'NoirNest',
+    tag: 'Interior Design',
+    gradient: 'linear-gradient(135deg,#0d0906,#1f1009,#3e1e0c)',
+    href: 'https://noirnest-orpin.vercel.app/',
+    description:
+      'Dark luxury interior design studio — atmosphere-led spaces crafted for modern living. Cinematic editorial aesthetic, moody warm palette, and a refined conversion flow.',
+    tech: ['Next.js', 'React', 'CSS3'],
+  },
+  {
     id: 'prime-steak',
     title: 'Prime Steak & Grill',
     tag: 'Restaurant',
@@ -129,21 +175,25 @@ export const PROJECTS: Project[] = [
     tag: 'Branding',
     gradient: 'linear-gradient(135deg,#16100c,#5a3520,#e7b776)',
     image: '/projects/floeur.svg',
-    href: 'https://www.figma.com/proto/sSqu9ONpWdsPVsSMPDsyBe/FloEUR?node-id=11-1455&p=f&t=uPCzBQHJ194bRGHm-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
     description:
-      'FloEUR v1 branding and floral storefront concept, with an upgraded v2 experience coming soon.',
-    tech: ['Figma', 'Branding'],
-  },
-  {
-    id: 'floeur-v2',
-    title: 'FloEUR V2',
-    tag: 'Branding',
-    gradient: 'linear-gradient(135deg,#102e24,#d9c7ad,#f6f1e8)',
-    image: '/projects/floeur-v2.svg',
-    href: 'https://www.figma.com/proto/MaQdHzpiCWLL4KXU9FD8RW/FloEUR-V2?node-id=46-2&p=f&t=MEdgGRybnCMJbqZM-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
-    description:
-      'A refined FloEUR V2 prototype with a more polished floral shopping flow, softer brand details, and upgraded presentation.',
+      'FloEUR branding and floral storefront concept — available in two iterations. Click to explore V1 and V2.',
     tech: ['Figma', 'Branding', 'Prototype'],
+    versions: [
+      {
+        title: 'FloEUR V1',
+        href: 'https://www.figma.com/proto/sSqu9ONpWdsPVsSMPDsyBe/FloEUR?node-id=11-1455&p=f&t=uPCzBQHJ194bRGHm-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
+        image: '/projects/floeur.svg',
+        gradient: 'linear-gradient(135deg,#16100c,#5a3520,#e7b776)',
+        description: 'The original branding and floral storefront concept.',
+      },
+      {
+        title: 'FloEUR V2',
+        href: 'https://www.figma.com/proto/MaQdHzpiCWLL4KXU9FD8RW/FloEUR-V2?node-id=46-2&p=f&t=MEdgGRybnCMJbqZM-0&scaling=min-zoom&content-scaling=fixed&page-id=0%3A1',
+        image: '/projects/floeur-v2.svg',
+        gradient: 'linear-gradient(135deg,#102e24,#d9c7ad,#f6f1e8)',
+        description: 'Refined prototype with a more polished floral shopping flow and softer brand details.',
+      },
+    ],
   },
   {
     id: 'figma-next',
