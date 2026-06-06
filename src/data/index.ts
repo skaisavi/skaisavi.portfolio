@@ -107,6 +107,7 @@ export const PROJECTS: Project[] = [
     title: 'AERIS Tower',
     tag: 'Architecture',
     gradient: 'linear-gradient(135deg,#06090e,#0f1c2e,#1a3252)',
+    image: '/projects/aeris-tower.png',
     wide: true,
     description:
       'Luxury office tower marketing site — interactive architectural showcase with parallax reveals, smooth scroll storytelling, and a leasing portal. Refined minimalism shipped from concept to live product.',
@@ -116,6 +117,7 @@ export const PROJECTS: Project[] = [
         title: 'Live Site',
         badge: 'Live',
         href: 'https://aeris-tower.vercel.app/',
+        image: '/projects/aeris-tower.png',
         gradient: 'linear-gradient(135deg,#06090e,#0f1c2e,#1a3252)',
         description: 'The full marketing site — parallax reveals, office selector, and leasing portal.',
       },
@@ -133,10 +135,22 @@ export const PROJECTS: Project[] = [
     title: 'NoirNest',
     tag: 'Interior Design',
     gradient: 'linear-gradient(135deg,#0d0906,#1f1009,#3e1e0c)',
+    image: '/projects/noirnest.png',
     href: 'https://noirnest-orpin.vercel.app/',
     description:
       'Dark luxury interior design studio — atmosphere-led spaces crafted for modern living. Cinematic editorial aesthetic, moody warm palette, and a refined conversion flow.',
     tech: ['Next.js', 'React', 'CSS3'],
+  },
+  {
+    id: 'mona',
+    title: 'MONA',
+    tag: 'Fintech',
+    gradient: 'linear-gradient(135deg,#f8e8bd,#f7e7b7,#ff4da0)',
+    image: '/projects/mona.png',
+    href: 'https://mona-app-delta.vercel.app/',
+    description:
+      'Playful AI money coach with spending insights, budget tracking, savings goals, and friendly financial guidance wrapped in a bold, approachable interface.',
+    tech: ['Next.js', 'React', 'TypeScript', 'CSS3'],
   },
   {
     id: 'prime-steak',
